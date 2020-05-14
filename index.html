@@ -9,7 +9,7 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo-link">
-      <img class="page-header__logo-image" alt="Логотип Pink">
+      <img class="page-header__logo-image" src="" alt="Логотип Pink">
     </a>
     <nav class="page-header__navigation navigation">
       <ul class="navigation__list list">
@@ -20,7 +20,7 @@
           <a class="navigation__link link" href="#">Фотографии</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link link" href="#">Конкурс</a>
+          <a class="navigation__link link" href="form.html">Конкурс</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link link" href="#">HTML Academy</a>
@@ -30,7 +30,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="page-main">
     <section class="greeting">
       <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
       <a class="greeting__button button" href="#">Скачать приложение</a>
@@ -55,32 +55,45 @@
       <ul class="advantages__list list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h2>
-          <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-            несколько кликов!</p>
+            <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Меняет мир вокруг</h2>
-          <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-            усилить эффект</p>
+            <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Заводит новых друзей</h2>
-          <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-            новых</p>
+            <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+              новых</p>
         </li>
       </ul>
     </section>
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы о приложении Pink</h2>
-      <blockquote class="reviews__blok">
-        <cite class="reviews__autor">Николай петров</cite>
-        <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
-          вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
-      </blockquote>
-      <button class="button-switch button" type="button">1</button>
-      <button class="button-switch button" type="button">2</button>
-      <button class="button-switch button" type="button">3</button>
+      <ul class="reviews__list list">
+        <li class="reviews__item">
+          <blockquote class="reviews__blok">
+            <cite class="reviews__autor">Николай петров</cite>
+            <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+              серые
+              вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>
+          </blockquote>
+        </li>
+      </ul>
+      <ul class="switch__list list">
+        <li class="switch__item">
+          <button class="switch__button button" type="button">1</button>
+        </li>
+        <li class="switch__item">
+          <button class="switch__button button" type="button">2</button>
+        </li>
+        <li class="switch__item">
+          <button class="switch__button button" type="button">3</button>
+        </li>
+      </ul>
     </section>
 
     <section class="price">
@@ -102,9 +115,17 @@
           <td class="table__cell">Комментарий</td>
         </tr>
       </table>
-      <button class="button-switch button" type="button">1</button>
-      <button class="button-switch button" type="button">2</button>
-      <button class="button-switch button" type="button">3</button>
+      <ul class="switch__list list">
+        <li class="switch__item">
+          <button class="switch__button button" type="button">1</button>
+        </li>
+        <li class="switch__item">
+          <button class="switch__button button" type="button">2</button>
+        </li>
+        <li class="switch__item">
+          <button class="switch__button button" type="button">3</button>
+        </li>
+      </ul>
     </section>
 
     <section class="contact">
@@ -126,8 +147,35 @@
         </li>
       </ul>
     </section>
-
   </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo-link">
+      <img class="page-footer__logo-image" src="" alt="Логотип Pink">
+    </a>
+    <ul class="social__list list">
+      <li class="social__item">
+        <a class="social__link social__link--twitter link" href="https://twitter.com/explore">
+          <span class="visually-hidden">Twittre</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook link" href="https://www.facebook.com/">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--google-play link" href="https://play.google.com/store">
+          <span class="visually-hidden">Google play</span>
+        </a>
+      </li>
+    </ul>
+    <p class="footer-copyright">
+      <span class="footer-copyright__text">Разработано</span>
+      <a class="footer-copyright__link link" href="https://htmlacademy.ru">
+        <span class="visually-hidden">HTML ACAdemy</span>
+      </a>
+    </p>
+  </footer>
 
 </body>
 

@@ -1,0 +1,20 @@
+@keyframes flicker {
+  0%,
+  100% {
+    text-shadow: 0 0 0 rgb(89, 151, 148);
+  }
+
+  50% {
+    text-shadow: 0 0 15px rgb(89, 151, 148);
+  }
+}
+
+h1 {
+  padding: 150px 0;
+
+  color: lightseagreen;
+  font-size: 120px;
+  text-align: center;
+
+  animation: flicker 2s ease-out infinite;
+}

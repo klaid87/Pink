@@ -1,0 +1,21 @@
+@-webkit-keyframes flicker {
+  0%,
+  100% {
+    text-shadow: 0 0 0 #599794; }
+  50% {
+    text-shadow: 0 0 15px #599794; } }
+
+@keyframes flicker {
+  0%,
+  100% {
+    text-shadow: 0 0 0 #599794; }
+  50% {
+    text-shadow: 0 0 15px #599794; } }
+
+h1 {
+  padding: 150px 0;
+  color: lightseagreen;
+  font-size: 120px;
+  text-align: center;
+  -webkit-animation: flicker 2s ease-out infinite;
+          animation: flicker 2s ease-out infinite; }

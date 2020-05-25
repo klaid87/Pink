@@ -43,81 +43,81 @@
         <fieldset class="profile__group">
           <legend class="visually-hidden">Инициалы</legend>
           <p class="profile__wrapper-field">
-            <label for="surname-id">Фамилия:</label>
+            <label class="profile__label" for="surname-id">Фамилия:</label>
             <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию*"
               required>
           </p>
           <p class="profile__wrapper-field">
-            <label for="name-id">Имя:</label>
-            <input id="name-id" class="profile-field" type="text" name="name" placeholder="Укажите ваше имя*" required>
+            <label class="profile__label" for="name-id">Имя:</label>
+            <input id="name-id" class="profile__field" type="text" name="name" placeholder="Укажите ваше имя*" required>
           </p>
           <p class="profile__wrapper-field">
-            <label for="patronymic-id">Отчество:</label>
-            <input id="patronymic-id" class="profile-field" type="text" name="patronymic"
+            <label class="profile__label" for="patronymic-id">Отчество:</label>
+            <input id="patronymic-id" class="profile__field" type="text" name="patronymic"
               placeholder="Ну и отчество тоже">
           </p>
         </fieldset>
         <fieldset class="profile__group">
-          <legend class="form-group__heading">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="form-group__list list">
-            <li class="form-group__item">
-              <input id="selfie-id" class="form-group__input-checkbox" type="checkbox" name="selfie" checked>
-              <label for="selfie-id">Сделал селфи с акулой</label>
+          <legend class="profile__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="profile__list list">
+            <li class="profile__item">
+              <input id="selfie-id" class="profile__input-checkbox" type="checkbox" name="selfie" checked>
+              <label class="profile__label-checkbox" for="selfie-id">Сделал селфи с акулой</label>
             </li>
-            <li class="form-group__item">
-              <input id="burnt-id" class="form-group__input-checkbox" type="checkbox" name="burnt" checked>
-              <label for="burnt-id">Обгорел на пляже</label>
+            <li class="profile__item">
+              <input id="burnt-id" class="profile__input-checkbox" type="checkbox" name="burnt" checked>
+              <label class="profile__label-checkbox" for="burnt-id">Обгорел на пляже</label>
             </li>
-            <li class="form-group__item">
-              <input id="saw-id" class="form-group__input-checkbox" type="checkbox" name="saw">
-              <label for="saw-id">Видел Чака Норриса</label>
+            <li class="profile__item">
+              <input id="saw-id" class="profile__input-checkbox" type="checkbox" name="saw">
+              <label class="profile__label-checkbox" for="saw-id">Видел Чака Норриса</label>
             </li>
-            <li class="form-group__item">
-              <input id="bought-id" class="form-group__input-checkbox" type="checkbox" name="bought">
-              <label for="bought-id">Накупил сувениров</label>
+            <li class="profile__item">
+              <input id="bought-id" class="profile__input-checkbox" type="checkbox" name="bought">
+              <label class="profile__label-checkbox" for="bought-id">Накупил сувениров</label>
             </li>
-            <li class="form-group__item">
-              <input id="kept-id" class="form-group__input-checkbox" type="checkbox" name="kept" checked>
-              <label for="kept-id">Удержал башню</label>
+            <li class="profile__item">
+              <input id="kept-id" class="profile__input-checkbox" type="checkbox" name="kept" checked>
+              <label class="profile__label-checkbox" for="kept-id">Удержал башню</label>
             </li>
-            <li class="form-group__item">
-              <input id="defeated-id" class="form-group__input-checkbox" type="checkbox" name="defeated">
-              <label for="defeated-id">Разгромил отель</label>
+            <li class="profile__item">
+              <input id="defeated-id" class="profile__input-checkbox" type="checkbox" name="defeated">
+              <label class="profile__label-checkbox" for="defeated-id">Разгромил отель</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-group">
+        <fieldset class="profile__group">
           <legend class="visually-hidden">Контактная информация</legend>
-          <p class="wrapper-field">
-            <label for="phone-id">Номер телефона</label>
-            <input id="phone-id" class="input-field" type="text" name="phone" placeholder="Номер,пожалуйста">
+          <p class="profile__wrapper-field">
+            <label class="profile__label" for="phone-id">Номер телефона</label>
+            <input id="phone-id" class="profile__field" type="text" name="phone" placeholder="Номер,пожалуйста">
           </p>
-          <p class="wrapper-field">
-            <label for="mail-id">Адрес почты</label>
-            <input id="mail-id" class="input-field" type="mail" name="mail" placeholder="Введите почту*" required>
+          <p class="profile__wrapper-field">
+            <label class="profile__label" for="mail-id">Адрес почты</label>
+            <input id="mail-id" class="profile__field" type="mail" name="mail" placeholder="Введите почту*" required>
           </p>
         </fieldset>
-        <fieldset class="form-group">
-          <legend class="form-group__heading">С каким приложением путешествовали?</legend>
-          <ul class="form-group__list list">
-            <li class="form-group__item">
+        <fieldset class="profile__group">
+          <legend class="profile__legend">С каким приложением путешествовали?</legend>
+          <ul class="profile__list list">
+            <li class="profile__item">
               <input id="ios-id" class="visually-hidden" type="radio" name="radio" value="ios">
-              <label class="form-group__label" for="ios-id">Pink для iOS</label>
+              <label class="profile__label-radio" for="ios-id">Pink для iOS</label>
             </li>
-            <li class="form-group__item">
+            <li class="profile__item">
               <input id="android-id" class="visually-hidden" type="radio" name="radio" value="android">
-              <label class="form-group__label" for="android-id">Pink на Android</label>
+              <label class="profile__label-radio" for="android-id">Pink на Android</label>
             </li>
-            <li class="form-group__item">
+            <li class="profile__item">
               <input id="windows-id" class="visually-hidden" type="radio" name="radio" value="windows">
-              <label class="form-group__label" for="windows-id">Windows Phone</label>
+              <label class="profile__label-radio" for="windows-id">Windows Phone</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-group">
-          <legend class="form-group__heading">Опишите свои эмоции</legend>
+        <fieldset class="profile__group">
+          <legend class="profile__legend">Опишите свои эмоции</legend>
           <label class="visually-hidden" for="emotions-id">Поле ввода эмоций о приложении Pink</label>
-          <textarea id="emotions-id" class="input-field" name="emotions"
+          <textarea id="emotions-id" class="profile__field-textarea" name="emotions"
             placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="profile__button button" type="submit">Отправить форму</button><br>

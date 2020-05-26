@@ -7,7 +7,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
   <header class="page-header">
     <a class="page-header__logo-link">
       <img class="page-header__logo-image" src="" alt="Логотип Pink">
@@ -34,25 +34,29 @@
   <main class="page-main">
     <section class="greeting">
       <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
-      <a class="greeting__button button" href="#">Скачать приложение</a>
-      <ul class="greeting__list list">
-        <li class="greeting__item">
+    </section>
+    <section class="download">
+      <a class="download__button button" href="#">Скачать приложение</a>
+      <ul class="download__list list">
+        <li class="download__item">
           <span class="visually-hidden">apple</span>
         </li>
-        <li class="greeting__item">
+        <li class="download__item">
           <span class="visually-hidden">android</span>
         </li>
-        <li class="greeting__item">
+        <li class="download__item">
           <span class="visually-hidden">windows</span>
         </li>
       </ul>
-      <p class="greeting__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </section>
 
     <section class="advantages">
       <h2 class="visually-hidden">Наши приемущества</h2>
-      <p class="advantages__text">Устали от серости мегаполиса?</p>
-      <p class="advantages__text">Нам есть, что вам предложить!</p>
+      <div class="advantages__wrapper-text">
+        <p class="advantages__text">Устали от серости мегаполиса?</p>
+        <p class="advantages__text">Нам есть, что вам предложить!</p>
+      </div>
       <ul class="advantages__list list">
         <li class="advantages__item">
           <h3 class="advantages__title">Поднимает настроение</h2>

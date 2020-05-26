@@ -1,2 +1,63 @@
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+.navigation {
+  background: #283645; }
+
 .navigation__link {
-  color: red; }
+  font-family: "Open-Sans", "Arial", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 32px; }
+
+.page-header {
+  background: #283645; }
+
+.download__button {
+  font-family: "Open-Sans";
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 18px; }
+
+.download__text {
+  font-family: "Open-Sans";
+  font-weight: 300;
+  line-height: 24px;
+  color: #6a6a6a; }
+
+.download {
+  background-color: #1d2631; }
+
+.greeting {
+  background: url("../images/greeting/greetingbackground.jpg"); }
+
+.advantages__wrapper-text {
+  background-color: #ffffff; }
+
+.advantages__text {
+  font-family: "Open-Sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645; }
+
+.advantages__title {
+  font-family: "Open-Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000; }
+
+.advantages__list {
+  background-color: #f2f2f2; }

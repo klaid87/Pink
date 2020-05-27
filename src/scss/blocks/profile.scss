@@ -1,0 +1,56 @@
+.profile__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.profile__label {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.profile__field,
+.profile__field-textarea {
+  border: 2px solid #e5e5e5;
+}
+
+.profile__field[placeholder],
+.profile__field-textarea[placeholder] {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645;
+}
+
+.profile__legend {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.profile__label-checkbox,
+.profile__label-radio {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.profile__group--dark {
+  background-color: #f2f2f2;
+}
+
+.profile__button {
+  background-color: #2aab6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+}

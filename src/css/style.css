@@ -12,6 +12,20 @@
   font-style: normal;
   font-display: swap; }
 
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Open-Sans";
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
 .navigation {
   background: #283645; }
 
@@ -40,8 +54,17 @@
 .download {
   background-color: #1d2631; }
 
+.download__item--apple {
+  background: url("../images/svg/apple.svg") no-repeat left top; }
+
+.download__item--android {
+  background: url("../images/svg/android.svg") no-repeat left top; }
+
+.download__item--windows {
+  background: url("../images/svg/windows.svg") no-repeat left top; }
+
 .greeting {
-  background: url("../images/greeting/greetingbackground.jpg"); }
+  background: url("../images/background/greetingbackground.jpg"); }
 
 .advantages__wrapper-text {
   background-color: #ffffff; }
@@ -61,3 +84,43 @@
 
 .advantages__list {
   background-color: #f2f2f2; }
+
+.advantages__item-text {
+  font-family: "Open-Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #283645; }
+
+.reviews__autor {
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  font-style: normal;
+  color: #000000; }
+
+.reviews__text {
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #283645; }
+
+.contact__text {
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645; }
+
+.contact__subtext {
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #283645; }
+
+.contact__link {
+  font-family: "Open-sans", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #d22856; }

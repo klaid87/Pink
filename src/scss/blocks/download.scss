@@ -15,3 +15,15 @@
 .download {
   background-color: #1d2631;
 }
+
+.download__item--apple {
+  background: url("../images/svg/apple.svg") no-repeat left top;
+}
+
+.download__item--android {
+  background: url("../images/svg/android.svg") no-repeat left top;
+}
+
+.download__item--windows {
+  background: url("../images/svg/windows.svg") no-repeat left top;
+}

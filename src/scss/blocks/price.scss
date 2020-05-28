@@ -1,0 +1,39 @@
+.price__table {
+  display: table;
+  border-collapse: collapse;
+}
+
+.price__row {
+  display: table-row;
+  border: 2px solid #f2f2f2;
+}
+
+.price__cell {
+  display: table-cell;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-transform: uppercase;
+  padding: 25px 15px 25px 23px;
+}
+
+.price__title {
+  background-color: #283645;
+  padding: 25px 90px;
+}
+
+.price__title-package {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.price__title-cost {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #ffffff;
+}

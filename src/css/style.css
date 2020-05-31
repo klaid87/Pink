@@ -423,6 +423,15 @@ img {
   line-height: 30px;
   color: #283645; }
 
+.reviews__blok {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .contact__text {
   font-size: 24px;
   font-weight: 300;
@@ -437,6 +446,15 @@ img {
   font-size: 24px;
   font-weight: 300;
   color: #d22856; }
+
+.contact__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .footer-copyright__text {
   font-weight: 400;
@@ -564,10 +582,6 @@ img {
 .container {
   padding: 0 20px; }
 
-.promo {
-  background: url("../images/background/iphone-6-background.png") no-repeat center;
-  background-size: contain; }
-
 .promo__heading {
   font-size: 24px;
   font-weight: 300;
@@ -608,3 +622,6 @@ img {
 
 .promo__content-wrapper {
   background-color: #1d2631; }
+
+.heading {
+  margin: 0; }

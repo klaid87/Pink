@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <title>Pink</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
 </head>
 
-<body class="body">
+<body>
   <header class="page-header">
     <a class="page-header__logo-link">
       <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22" alt="Логотип Pink">
@@ -35,20 +37,23 @@
     <section class="greeting">
       <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
     </section>
-    <section class="download">
-      <a class="download__button button" href="#">Скачать приложение</a>
-      <ul class="download__list list">
-        <li class="download__item download__item--apple">
-          <span class="visually-hidden">apple</span>
-        </li>
-        <li class="download__item download__item--android">
-          <span class="visually-hidden">android</span>
-        </li>
-        <li class="download__item download__item--windows">
-          <span class="visually-hidden">windows</span>
-        </li>
-      </ul>
-      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    <section class="promo">
+      <h2 class="promo__heading">Взгляните на жизнь иначе!</h2>
+      <div class="promo__content-wrapper">
+        <a class="promo__button button" href="#">Скачать приложение</a>
+        <ul class="promo__list list">
+          <li class="promo__item promo__item--apple">
+            <span class="visually-hidden">apple</span>
+          </li>
+          <li class="promo__item promo__item--android">
+            <span class="visually-hidden">android</span>
+          </li>
+          <li class="promo__item promo__item--windows">
+            <span class="visually-hidden">windows</span>
+          </li>
+        </ul>
+        <p class="promo__subtext">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
     </section>
 
     <section class="advantages">
@@ -74,6 +79,9 @@
               новых</p>
         </li>
       </ul>
+      <picture class="advantages__pictures">
+        <img class="advantages__image" src="images/pictures/advantages/iphone-screen.png" alt="Скрин Iphone 5">
+      </picture>
     </section>
 
     <section class="reviews">

@@ -1,0 +1,55 @@
+.promo {
+  background: url("../images/background/iphone-6-background.png") no-repeat center;
+  background-size: contain;
+}
+
+.promo__heading {
+  font-size: 24px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.promo__button {
+  display: inline-block;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 18px;
+  border: 2px solid #ffffff;
+  padding: 16px 45px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.promo__text {
+  font-size: 50px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.promo__subtext {
+  font-weight: 300;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+
+.promo__item {
+  min-width: 50px;
+  min-height: 60px;
+}
+
+.promo__item--apple {
+  background: url("../images/svg/apple.svg") no-repeat left top;
+}
+
+.promo__item--android {
+  background: url("../images/svg/android.svg") no-repeat left top;
+}
+
+.promo__item--windows {
+  background: url("../images/svg/windows.svg") no-repeat left top;
+}
+
+.promo__content-wrapper {
+  background-color: #1d2631;
+}
+

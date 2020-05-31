@@ -1,9 +1,5 @@
 .greeting {
-  background: url("../images/background/greetingbackground.jpg") no-repeat;
+  background: url("../images/background/greetingbackground.jpg") no-repeat center; 
+  background-size: cover;
 }
 
-.greeting__heading {
-  font-size: 24px;
-  font-weight: 300;
-  color: #ffffff;
-}

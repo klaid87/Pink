@@ -386,8 +386,9 @@ img {
   background: #283645; }
 
 .greeting {
-  background: url("../images/background/greetingbackground.jpg") no-repeat center;
-  background-size: cover; }
+  background: url("../images/background/greetingbackground.jpg") no-repeat left;
+  background-size: contain;
+  padding-bottom: 460px; }
 
 .advantages {
   background-color: #f2f2f2; }
@@ -401,15 +402,28 @@ img {
   color: #283645; }
 
 .advantages__title {
-  font-size: 18px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 30px;
   color: #000000; }
 
 .advantages__item-text {
+  font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   color: #283645; }
+
+.advantages__item-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: #d22856;
+  line-height: 30px;
+  text-decoration: underline; }
+
+.advantages__timer {
+  font-size: 120px;
+  font-weight: 700;
+  color: #d22856; }
 
 .reviews__autor {
   font-size: 18px;
@@ -418,7 +432,8 @@ img {
   font-style: normal;
   color: #000000; }
 
-.reviews__text {
+.reviews__text,
+.reviews__autor-subtext {
   font-weight: 400;
   line-height: 30px;
   color: #283645; }
@@ -622,6 +637,9 @@ img {
 
 .promo__content-wrapper {
   background-color: #1d2631; }
+
+.promo__image {
+  background-color: transparent; }
 
 .heading {
   margin: 0; }

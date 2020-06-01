@@ -11,9 +11,11 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22" alt="Логотип Pink">
-    </a>
+    <div class="container">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22" alt="Логотип Pink">
+      </a>
+    </div>
     <nav class="page-header__navigation navigation">
       <ul class="navigation__list list">
         <li class="navigation__item">
@@ -39,7 +41,8 @@
     </section>
     <section class="promo">
       <picture class="promo__picture picture">
-        <img class="promo__image" src="images/pictures/promo/iphone-6-background.png" width="660px" height="545px" alt="Изображение Iphone-6 c приложением Pink">
+        <img class="promo__image" src="images/pictures/promo/iphone-6-background.png" width="660px" height="545px"
+          alt="Изображение Iphone-6 c приложением Pink">
       </picture>
       <div class="promo__content-wrapper">
         <h2 class="promo__heading heading">Взгляните на жизнь иначе!</h2>
@@ -78,13 +81,25 @@
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">Заводит новых друзей</h2>
-            <p class="advantages__item-text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            <p class="advantages__item-text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите
               новых</p>
+            <picture class="advantages__item-pictures picture">
+              <img class="advantages__item-image" src="images/pictures/advantages/iphone-screen.png"
+                alt="Скрин Iphone 5 со смайликом">
+            </picture>
         </li>
       </ul>
-      <picture class="advantages__pictures picture">
-        <img class="advantages__image" src="images/pictures/advantages/iphone-screen.png" alt="Скрин Iphone 5">
-      </picture>
+      <div class="advantages__content-wrapper">
+        <span class="advantages__timer">24</span>
+        <ul class="advantages__list list">
+          <h3 class="advantages__title heading">Эффект на 24 часа!</h3>
+          <p class="advantages__item-text text">Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="advantages__item-link link" href="#">Узнать больше об исследовании</a>
+        </ul>
+      </div>
     </section>
 
     <section class="reviews">
@@ -93,6 +108,7 @@
         <li class="reviews__item">
           <blockquote class="reviews__blok">
             <cite class="reviews__autor">Николай петров</cite>
+            <span class="reviews__autor-subtext">25 лет, водитель трамвая</span>
             <q class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые
               вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q>

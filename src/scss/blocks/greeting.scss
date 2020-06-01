@@ -1,5 +1,6 @@
 .greeting {
-  background: url("../images/background/greetingbackground.jpg") no-repeat center; 
-  background-size: cover;
+  background: url("../images/background/greetingbackground.jpg") no-repeat left;
+  background-size: contain;
+  padding-bottom: 460px;
 }
 

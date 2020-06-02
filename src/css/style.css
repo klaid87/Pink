@@ -423,7 +423,11 @@ img {
 .advantages__timer {
   font-size: 120px;
   font-weight: 700;
-  color: #d22856; }
+  color: #d22856;
+  display: none; }
+
+.advantages__list--secondary {
+  display: none; }
 
 .reviews__autor {
   font-size: 18px;
@@ -445,7 +449,11 @@ img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin: 0; }
+
+.reviews__autor-subtext {
+  display: none; }
 
 .contact__text {
   font-size: 24px;
@@ -600,7 +608,8 @@ img {
 .promo__heading {
   font-size: 24px;
   font-weight: 300;
-  color: #ffffff; }
+  color: #ffffff;
+  display: none; }
 
 .promo__button {
   display: inline-block;
@@ -640,6 +649,11 @@ img {
 
 .promo__image {
   background-color: transparent; }
+
+.promo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .heading {
   margin: 0; }

@@ -2,6 +2,7 @@
   font-size: 24px;
   font-weight: 300;
   color: #ffffff;
+  display: none;
 }
 
 .promo__button {
@@ -52,3 +53,6 @@
   background-color: transparent;
 }
 
+.promo__list {
+  display: flex;
+}

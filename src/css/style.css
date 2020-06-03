@@ -387,8 +387,13 @@ img {
 
 .greeting {
   background: url("../images/background/greetingbackground.jpg") no-repeat left;
-  background-size: cover;
+  background-size: contain;
   padding-bottom: 460px; }
+
+.greeting__heading {
+  font-size: 50px;
+  font-weight: 300;
+  color: #ffffff; }
 
 .advantages {
   background-color: #f2f2f2; }
@@ -547,6 +552,15 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700; }
+
+.profile__wrapper-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .list {
   list-style: none;

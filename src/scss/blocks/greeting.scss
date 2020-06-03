@@ -1,6 +1,12 @@
 .greeting {
   background: url("../images/background/greetingbackground.jpg") no-repeat left;
-  background-size: cover;
+  background-size: contain;
   padding-bottom: 460px;
+}
+
+.greeting__heading {
+  font-size: 50px;
+  font-weight: 300;
+  color: #ffffff;
 }
 

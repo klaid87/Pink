@@ -20,3 +20,19 @@
   display: flex;
   flex-direction: column;
 }
+
+@media(min-width: $mobile-width) {
+  .contact__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact__list-item:nth-child(1),
+  .contact__list-item:nth-child(2) {
+    width: 50%;
+  }
+
+  .contact__list-item:nth-child(3) {
+    flex-grow: 2;
+  }
+}

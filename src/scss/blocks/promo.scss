@@ -50,9 +50,32 @@
 }
 
 .promo__image {
+  position: absolute;
+  top: 320px;
+  left: 0;
   background-color: transparent;
 }
 
 .promo__list {
   display: flex;
+}
+
+@media(min-width: $mobile-width) {
+  .promo {
+    display: flex;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: 320px;
+    left: 165px;
+    display: block;
+  }
+
+  .promo__content-wrapper {
+    position: absolute;
+    top: 320px;
+    left: 0;
+    background-color: transparent;
+  }
 }

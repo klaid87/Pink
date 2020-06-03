@@ -38,9 +38,14 @@
   font-size: 120px;
   font-weight: 700;
   color: #d22856;
+}
+
+.advantages__content-wrapper {
   display: none;
 }
 
-.advantages__list--secondary {
-  display: none;
+@media(min-width: $mobile-width) {
+  .advantages__content-wrapper {
+    display: block;
+  }
 }

@@ -29,7 +29,9 @@
 body {
   font-family: "Open-Sans", "Arial", sans-serif;
   font-size: 14px;
-  min-width: 320px; }
+  min-width: 320px;
+  margin: 0;
+  padding: 0; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -386,8 +388,11 @@ img {
   background: #283645; }
 
 .greeting {
-  background: url("../images/background/greetingbackground.jpg") no-repeat left;
-  background-size: contain;
+  background-color: #222e3b;
+  background: url("../images/background/back-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
   padding-bottom: 460px; }
 
 .greeting__heading {

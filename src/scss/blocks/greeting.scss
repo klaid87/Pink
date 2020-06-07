@@ -1,6 +1,9 @@
 .greeting {
-  background: url("../images/background/greetingbackground.jpg") no-repeat left;
-  background-size: contain;
+  background-color: #222e3b;
+  background: url("../images/background/back-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
   padding-bottom: 460px;
 }
 

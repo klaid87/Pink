@@ -1,3 +1,21 @@
 .page-header {
-  background: #283645;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
 }
+
+.page-header--menu-opened {
+  padding-bottom: 0;
+  background-color: #283645;
+  .navigation__list {
+    display: block;
+  }
+}
+
+.page-header__logo-link {
+  margin-right: auto;
+}
+

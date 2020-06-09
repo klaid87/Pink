@@ -375,25 +375,87 @@ a {
 img {
   max-width: 100%; }
 
-.navigation {
-  background: #283645; }
+.navigation__list {
+  display: none;
+  margin: 21px -20px 0;
+  border-top: 1px solid #000000; }
+
+.navigation__item {
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
+  background-color: #283645; }
 
 .navigation__link {
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  line-height: 32px; }
+  line-height: 32px;
+  display: block;
+  padding: 25px;
+  text-align: center; }
+
+.navigation__button {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  width: 50px;
+  height: 24px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer; }
+  .navigation__button::before, .navigation__button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff; }
+  .navigation__button::before {
+    top: 0; }
+  .navigation__button::after {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-shadow: 0 10px 0 0 #ffffff;
+            box-shadow: 0 10px 0 0 #ffffff; }
+  .navigation__button--opened {
+    width: 30px; }
+    .navigation__button--opened::before {
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(45deg);
+              transform: translateY(-50%) rotate(45deg); }
+    .navigation__button--opened::after {
+      top: 50%;
+      -webkit-transform: translateY(-50%) rotate(-45deg);
+              transform: translateY(-50%) rotate(-45deg);
+      -webkit-box-shadow: none;
+              box-shadow: none; }
 
 .page-header {
-  background: #283645; }
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px; }
+
+.page-header--menu-opened {
+  padding-bottom: 0;
+  background-color: #283645; }
+  .page-header--menu-opened .navigation__list {
+    display: block; }
+
+.page-header__logo-link {
+  margin-right: auto; }
 
 .greeting {
   background-color: #222e3b;
   background: url("../images/background/back-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0;
-  padding-bottom: 460px; }
+  background-position: center;
+  padding-top: 175px; }
 
 .greeting__heading {
   font-size: 50px;
@@ -642,6 +704,18 @@ img {
 .container {
   padding: 0 20px; }
 
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .promo__heading {
   font-size: 24px;
   font-weight: 300;
@@ -664,13 +738,16 @@ img {
   color: #ffffff; }
 
 .promo__subtext {
+  max-width: 230px;
+  text-align: center;
   font-weight: 300;
   line-height: 24px;
   color: #6a6a6a; }
 
 .promo__item {
   min-width: 50px;
-  min-height: 60px; }
+  min-height: 60px;
+  margin-right: 35px; }
 
 .promo__item--apple {
   background: url("../images/svg/apple.svg") no-repeat left top; }
@@ -682,34 +759,37 @@ img {
   background: url("../images/svg/windows.svg") no-repeat left top; }
 
 .promo__content-wrapper {
-  background-color: #1d2631; }
+  background-color: #1d2631;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 27px 0 36px; }
 
 .promo__image {
-  position: absolute;
-  top: 320px;
-  left: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  display: block; }
 
 .promo__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
+.promo__picture {
+  display: block; }
+
 @media (min-width: 768px) {
   .promo {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .promo__image {
-    position: absolute;
-    top: 320px;
-    left: 165px;
-    display: block; }
-  .promo__content-wrapper {
-    position: absolute;
-    top: 320px;
-    left: 0;
-    background-color: transparent; } }
+    display: flex; } }
 
 .heading {
   margin: 0; }

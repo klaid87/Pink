@@ -45,14 +45,21 @@
           <h2 class="promo__heading heading">Взгляните на жизнь иначе!</h2>
           <a class="promo__button button link" href="#">Скачать приложение</a>
           <ul class="promo__list list">
-            <li class="promo__item promo__item--apple">
-              <span class="visually-hidden">apple</span>
+            <li class="promo__item">
+              <a class="promo__link promo__link--apple link" href="https://www.apple.com/itunes/">
+                <span class="visually-hidden">apple</span>
+              </a>
             </li>
-            <li class="promo__item promo__item--android">
-              <span class="visually-hidden">android</span>
+            <li class="promo__item">
+              <a class="promo__link promo__link--android link" href="https://play.google.com/store">
+                <span class="visually-hidden">android</span>
+              </a>
             </li>
-            <li class="promo__item promo__item--windows">
-              <span class="visually-hidden">windows</span>
+            <li class="promo__item">
+              <a class="promo__link promo__link--windows link"
+                href="https://www.microsoft.com/ru-ru/download/windowsphone.aspx">
+                <span class="visually-hidden">windows</span>
+              </a>
             </li>
           </ul>
           <p class="promo__subtext">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -63,13 +70,14 @@
     <section class="advantages">
       <h2 class="visually-hidden">Наши приемущества</h2>
       <div class="advantages__wrapper-text">
-        <p class="advantages__text">Устали от серости мегаполиса?</p>
-        <p class="advantages__text">Нам есть, что вам предложить!</p>
+        <p class="advantages__text text">Устали от серости мегаполиса?</p>
+        <p class="advantages__text text">Нам есть, что вам предложить!</p>
       </div>
       <ul class="advantages__list list">
         <li class="advantages__item">
-          <h3 class="advantages__title">Поднимает настроение</h2>
-            <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+          <h3 class="advantages__title heading">Поднимает настроение</h2>
+            <p class="advantages__item-text text">Приложение позволит вам победить осеннюю хандру и депрессию буквально
+              в
               несколько кликов!</p>
         </li>
         <li class="advantages__item">
@@ -78,7 +86,7 @@
               усилить эффект</p>
         </li>
         <li class="advantages__item">
-          <h3 class="advantages__title">Заводит новых друзей</h2>
+          <h3 class="advantages__title heading">Заводит новых друзей</h2>
             <p class="advantages__item-text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
               заводите
               новых</p>
@@ -114,9 +122,9 @@
         </li>
       </ul>
       <div class="switch">
-        <button class="switch__button button" type="button">1</button>
-        <button class="switch__button button" type="button">2</button>
-        <button class="switch__button button" type="button">3</button>
+        <button class="switch__button button" type="button"><span class="visually-hidden">1</span></button>
+        <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
+        <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
       </div>
     </section>
 
@@ -140,9 +148,9 @@
         </tr>
       </table>
       <div class="switch">
-        <button class="switch__button button" type="button">1</button>
-        <button class="switch__button button" type="button">2</button>
-        <button class="switch__button button" type="button">3</button>
+        <button class="switch__button button" type="button"><span class="visually-hidden">1</span></button>
+        <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
+        <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
       </div>
     </section>
 
@@ -212,16 +220,40 @@
     <ul class="social__list list">
       <li class="social__item">
         <a class="social__link social__link--twitter link" href="https://twitter.com/explore">
+          <svg class="social__icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.5 14.7" xml:space="preserve"
+            width="19px" height="17px">
+            <g id="W6EeEF_1_">
+              <g>
+                <path d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+			c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+			c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+			c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z" />
+              </g>
+            </g>
+          </svg>
           <span class="visually-hidden">Twittre</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--facebook link" href="https://www.facebook.com/">
+          <svg class="social__icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.7 18.9"
+            style="enable-background:new 0 0 8.7 18.9;" xml:space="preserve" width="10px" height="20px">
+            <path d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2c0,3.1,0,6.2,0,9.3
+	            c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z" />
+          </svg>
+
           <span class="visually-hidden">Facebook</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--google-play link" href="https://play.google.com/store">
+          <svg class="social__icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14.6 14"
+            style="enable-background:new 0 0 14.6 14;" xml:space="preserve" width="17px" height="15px">
+            <path d="M1.8,13.8c-1,0.5-1.8,0-1.8-1.1V1.3c0-1.1,0.8-1.6,1.8-1.1l12.1,5.9c1,0.5,1,1.3,0,1.7L1.8,13.8z" />
+          </svg>
           <span class="visually-hidden">Google play</span>
         </a>
       </li>
@@ -229,6 +261,14 @@
     <p class="footer-copyright">
       <span class="footer-copyright__text">Разработано</span>
       <a class="footer-copyright__link link" href="https://htmlacademy.ru">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve" width="110px" height="100px">
+          <path class="st0" d="M640.8,303l-0.8-0.1l-76.7,8v140.6l76.7,45.6l76.7-45.6V310.9L640.8,303z M706.7,445.8L640,485.4l-66.7-39.7
+	v-57.6l66.4,39.5l0.1,7.2l-45.5-27.1l-0.1,7l45.7,27.5l0.1,7.3l-45.7-27.2l-0.1,7l45.7,27.5l46.2-27.6v-7l-0.1,0v-2.4v-2.9v-17.5
+	l20.6-12.3V445.8z M706.6,379.7l-18.2,10.7l-8.4,5l-40.1-23.9l-0.1,7l34.3,20.4l-0.3,0.2l-0.7,0.4l-4.9,2.9l-28.3-16.9l-0.1,7
+	l22.4,13.3l-5.3,3.5l-0.1,0.1l-16.9-10l-0.1,7l11.1,6.5l-11.3,6.8l-66-39.3l66.1-39.8v0L706.6,379.7z M706.7,372.7l-67-39.5v0l0,0
+	l0,0v0l-66.3,39.5V320l66.7-7l66.7,7V372.7z" />
+        </svg>
         <span class="visually-hidden">HTML ACAdemy</span>
       </a>
     </p>

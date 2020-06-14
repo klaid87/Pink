@@ -1,0 +1,24 @@
+.switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.switch__button {
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+  margin-right: 20px;
+  outline: none;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 5px #283645;
+    outline: none;
+  }
+}

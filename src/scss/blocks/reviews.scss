@@ -1,16 +1,29 @@
+.reviews {
+  padding: 50px 0 0 0;
+}
+
+.reviews__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
 .reviews__autor {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   font-style: normal;
   color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.reviews__text,
-.reviews__autor-subtext {
-  font-weight: 400;
+.reviews__text {
   line-height: 30px;
+  font-weight: 400;
   color: #283645;
+  max-width: 280px;
+  text-align: center;
 }
 
 .reviews__blok {

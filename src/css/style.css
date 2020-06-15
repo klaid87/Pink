@@ -673,6 +673,13 @@ img {
   line-height: 18px;
   color: #283645; }
 
+.footer-copyright__link {
+  width: 30px;
+  height: 35px; }
+
+.page-footer__logo-link {
+  margin-bottom: 40px; }
+
 .profile__title {
   line-height: 30px;
   font-weight: 400;
@@ -910,3 +917,29 @@ img {
     -webkit-box-shadow: 0 0 0 5px #283645;
             box-shadow: 0 0 0 5px #283645;
     outline: none; }
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social__item {
+  margin-right: 13px; }
+
+.social__link {
+  width: 46px;
+  height: 46px;
+  border: 2px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.social__icon {
+  fill: #d22856; }

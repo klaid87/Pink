@@ -373,7 +373,8 @@ a {
   text-decoration: none; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 .text {
   padding: 0;
@@ -541,9 +542,6 @@ img {
   font-weight: 700;
   color: #d22856; }
 
-.advantages__content-wrapper {
-  display: none; }
-
 .advantages__item-pictures {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,8 +551,20 @@ img {
           justify-content: center; }
 
 @media (min-width: 768px) {
+  .advantages__text:first-child {
+    max-width: 593px;
+    margin-bottom: 0; }
   .advantages__content-wrapper {
-    display: block; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .advantages__item-pictures {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-right: 43px; }
+  .advantages__item-text {
+    text-align: left; } }
 
 .reviews {
   padding: 50px 0 0 0; }
@@ -773,8 +783,7 @@ img {
   border-collapse: collapse; }
 
 .price__row {
-  display: table-row;
-  border: 2px solid #f2f2f2; }
+  display: table-row; }
 
 .price__cell {
   display: table-cell;
@@ -783,11 +792,29 @@ img {
   font-weight: 400;
   color: #283645;
   text-transform: uppercase;
-  padding: 25px 15px 25px 23px; }
+  padding: 25px 15px 25px 23px;
+  border: 2px solid #f2f2f2;
+  text-align: center; }
 
 .price__title {
   background-color: #283645;
   padding: 25px 90px; }
+
+.price__title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.price__title:nth-child(3) {
+  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2; }
+
+.price__title:first-child {
+  background-color: transparent; }
 
 .price__title-package {
   font-size: 18px;
@@ -818,8 +845,9 @@ img {
           align-items: center; }
 
 .promo__heading {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 300;
+  text-align: center;
   color: #ffffff;
   display: none; }
 
@@ -892,7 +920,22 @@ img {
   .promo {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .promo__heading {
+    display: block;
+    max-width: 208px;
+    margin-bottom: 35px; }
+  .promo__picture {
+    -webkit-transform: translateX(-215px) translateY(60px);
+            transform: translateX(-215px) translateY(60px);
+    z-index: 1; }
+  .promo__content-wrapper {
+    background-color: transparent;
+    z-index: 2; } }
 
 .switch {
   display: -webkit-box;

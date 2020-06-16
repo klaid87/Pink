@@ -5,8 +5,9 @@
 }
 
 .promo__heading {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 300;
+  text-align: center;
   color: #ffffff;
   display: none;
 }
@@ -78,9 +79,26 @@
   display: block;
 }
 
-@media(min-width: $mobile-width) {
+@media(min-width: $tablet-width) {
   .promo {
     display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .promo__heading {
+    display: block;
+    max-width: 208px;
+    margin-bottom: 35px;
+  }
+
+  .promo__picture {
+    transform: translateX(-215px) translateY(60px);
+    z-index: 1;
+  }
+
+  .promo__content-wrapper {
+    background-color: transparent;
+    z-index: 2;
   }
 }
 

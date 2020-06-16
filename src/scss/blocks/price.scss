@@ -9,7 +9,6 @@
 
 .price__row {
   display: table-row;
-  border: 2px solid #f2f2f2;
 }
 
 .price__cell {
@@ -20,11 +19,27 @@
   color: #283645;
   text-transform: uppercase;
   padding: 25px 15px 25px 23px;
+  border: 2px solid #f2f2f2;
+  text-align: center;
 }
 
 .price__title {
   background-color: #283645;
   padding: 25px 90px;
+}
+
+.price__title-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__title:nth-child(3) {
+  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
+}
+
+.price__title:first-child {
+  background-color: transparent;
 }
 
 .price__title-package {

@@ -57,17 +57,27 @@
   color: #d22856;
 }
 
-.advantages__content-wrapper {
-  display: none;
-}
-
 .advantages__item-pictures {
   display: flex;
   justify-content: center;
 }
 
-@media(min-width: $mobile-width) {
+@media(min-width: $tablet-width) {
+  .advantages__text:first-child {
+    max-width: 593px;
+    margin-bottom: 0;
+  }
+
   .advantages__content-wrapper {
-    display: block;
+    display: flex;
+  }
+
+  .advantages__item-pictures {
+    order: -1;
+    margin-right: 43px;
+  }
+
+  .advantages__item-text {
+    text-align: left;
   }
 }

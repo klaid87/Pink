@@ -40,7 +40,7 @@
   margin-bottom: 25px;
 }
 
-@media(min-width: $mobile-width) {
+@media(min-width: $tablet-width) {
   .contact__list {
     display: flex;
     flex-wrap: wrap;

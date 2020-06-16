@@ -38,8 +38,8 @@
       <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
       <section class="promo">
         <picture class="promo__picture picture">
-          <img class="promo__image" src="images/pictures/promo/iphone-6.png" width="320px" height="314px"
-            alt="Изображение Iphone-6 c приложением Pink">
+          <source media="(min-width: 768px)" srcset="images/pictures/promo/iphone-6-tablet.png">
+          <img class="promo__image" src="images/pictures/promo/iphone-6.png" alt="Изображение Iphone-6 c приложением Pink">
         </picture>
         <div class="promo__content-wrapper">
           <h2 class="promo__heading heading">Взгляните на жизнь иначе!</h2>
@@ -73,6 +73,7 @@
         <p class="advantages__text text">Устали от серости мегаполиса?</p>
         <p class="advantages__text text">Нам есть, что вам предложить!</p>
       </div>
+      <div class="advantages__content-wrapper">
       <ul class="advantages__list list">
         <li class="advantages__item">
           <h3 class="advantages__title heading">Поднимает настроение</h2>
@@ -93,10 +94,12 @@
         </li>
       </ul>
       <picture class="advantages__item-pictures picture">
+        <source media="(min-width: 768px)" srcset="images/pictures/advantages/iphone-screen-tablet.png">
         <img class="advantages__item-image" src="images/pictures/advantages/iphone-screen.png"
           alt="Скрин Iphone 5 со смайликом">
       </picture>
-      <div class="advantages__content-wrapper">
+    </div>
+      <!-- <div class="advantages__content-wrapper">
         <span class="advantages__timer">24</span>
         <ul class="advantages__list advantages__list--secondary  list">
           <h3 class="advantages__title heading">Эффект на 24 часа!</h3>
@@ -105,7 +108,7 @@
           </p>
           <a class="advantages__item-link link" href="#">Узнать больше об исследовании</a>
         </ul>
-      </div>
+      </div> -->
     </section>
 
     <section class="reviews">
@@ -129,24 +132,51 @@
     </section>
 
     <section class="price">
+      <div class="container">
       <h2 class="visually-hidden">Прайс цен на пакеты приложения</h2>
       <table class="price__table">
         <tr class="price__row">
           <th class="price__title">
-            <span class="price__title-package">Стандарт</span>
-            <span class="price__title-cost">3,99 USD</span>
+          </th>
+          <th class="price__title">
+            <div class="price__title-wrapper">
+              <span class="price__title-package">База</span>
+              <span class="price__title-cost">1,99 USD</span>
+            </div>
+          </th>
+          <th class="price__title">
+            <div class="price__title-wrapper">
+              <span class="price__title-package">Стандарт</span>
+              <span class="price__title-cost">3,99 USD</span>
+            </div>
+          </th>
+          <th class="price__title">
+            <div class="price__title-wrapper">
+              <span class="price__title-package">Анлим</span>
+              <span class="price__title-cost">9,99 USD</span>
+            </div>
           </th>
         </tr>
         <tr class="price__row">
           <td class="price__cell">Розовый фильтр</td>
+          <td class="price__cell">есть</td>
+          <td class="price__cell">есть</td>
+          <td class="price__cell">есть</td>
         </tr>
         <tr class="price__row">
           <td class="price__cell">Смайлики</td>
+          <td class="price__cell">нет</td>
+          <td class="price__cell">есть</td>
+          <td class="price__cell">есть</td>
         </tr>
         <tr class="price__row">
           <td class="price__cell">Комментарий</td>
+          <td class="price__cell">нет</td>
+          <td class="price__cell">нет</td>
+          <td class="price__cell">есть</td>
         </tr>
       </table>
+    </div>
       <div class="switch">
         <button class="switch__button button" type="button"><span class="visually-hidden">1</span></button>
         <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
@@ -261,13 +291,10 @@
     <p class="footer-copyright">
       <span class="footer-copyright__text">Разработано</span>
       <a class="footer-copyright__link link" href="https://htmlacademy.ru">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          x="0px" y="0px" viewBox="0 0 1280 800" style="enable-background:new 0 0 1280 800;" xml:space="preserve" width="30px" height="35px">
-          <path class="st0" d="M640.8,303l-0.8-0.1l-76.7,8v140.6l76.7,45.6l76.7-45.6V310.9L640.8,303z M706.7,445.8L640,485.4l-66.7-39.7
-	v-57.6l66.4,39.5l0.1,7.2l-45.5-27.1l-0.1,7l45.7,27.5l0.1,7.3l-45.7-27.2l-0.1,7l45.7,27.5l46.2-27.6v-7l-0.1,0v-2.4v-2.9v-17.5
-	l20.6-12.3V445.8z M706.6,379.7l-18.2,10.7l-8.4,5l-40.1-23.9l-0.1,7l34.3,20.4l-0.3,0.2l-0.7,0.4l-4.9,2.9l-28.3-16.9l-0.1,7
-	l22.4,13.3l-5.3,3.5l-0.1,0.1l-16.9-10l-0.1,7l11.1,6.5l-11.3,6.8l-66-39.3l66.1-39.8v0L706.6,379.7z M706.7,372.7l-67-39.5v0l0,0
-	l0,0v0l-66.3,39.5V320l66.7-7l66.7,7V372.7z" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.4 194.2" width="30" height="35">
+          <path
+            d="M77.5.1l-.8-.1L0 8v140.6l76.7 45.6 76.7-45.6V8L77.5.1zm65.9 142.8l-66.7 39.6L10 142.8V85.2l66.4 39.5.1 7.2L31 104.8l-.1 7 45.7 27.5.1 7.3L31 119.4l-.1 7 45.7 27.5 46.2-27.6v-7h-.1V96.5l20.6-12.3.1 58.7h0zm-.1-66.1l-18.2 10.7-8.4 5-40.1-23.9-.1 7L110.8 96l-.3.2-.7.4-4.9 2.9-28.3-16.9-.1 7 22.4 13.3-5.3 3.5-.1.1-16.9-10-.1 7 11.1 6.5-11.3 6.8-66-39.3 66.1-39.8h0l66.9 39.1zm.1-7l-67-39.5h0L10.1 69.8V17.1l66.7-7 66.7 7v52.7h-.1z"
+            stroke="#231f20" stroke-miterlimit="10" />
         </svg>
         <span class="visually-hidden">HTML ACAdemy</span>
       </a>

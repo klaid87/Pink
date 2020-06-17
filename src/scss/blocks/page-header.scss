@@ -19,3 +19,9 @@
   margin-right: auto;
 }
 
+@media(min-width: $tablet-width) {
+ .page-header {
+    padding: 25px 20px 40px;
+ }
+}
+

@@ -464,6 +464,10 @@ img {
 .page-header__logo-link {
   margin-right: auto; }
 
+@media (min-width: 768px) {
+  .page-header {
+    padding: 25px 20px 40px; } }
+
 .greeting {
   background-color: #222e3b;
   background: url("../images/background/back-desktop.jpg");
@@ -924,14 +928,16 @@ img {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
+            flex-direction: row-reverse;
+    position: relative; }
   .promo__heading {
     display: block;
     max-width: 208px;
     margin-bottom: 35px; }
   .promo__picture {
-    -webkit-transform: translateX(-215px) translateY(60px);
-            transform: translateX(-215px) translateY(60px);
+    position: absolute;
+    bottom: 0;
+    right: 0;
     z-index: 1; }
   .promo__content-wrapper {
     background-color: transparent;

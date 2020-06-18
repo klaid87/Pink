@@ -70,6 +70,7 @@
 
   .advantages__content-wrapper {
     display: flex;
+    justify-content: center;
   }
 
   .advantages__item-pictures {
@@ -77,7 +78,12 @@
     margin-right: 43px;
   }
 
+  .advantages__item {
+    align-items: flex-start;
+  }
+
   .advantages__item-text {
     text-align: left;
   }
+
 }

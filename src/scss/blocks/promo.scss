@@ -21,6 +21,11 @@
   padding: 16px 45px;
   border-radius: 25px;
   margin-bottom: 30px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #1d2631;
+  }
 }
 
 .promo__text {

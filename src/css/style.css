@@ -561,12 +561,19 @@ img {
   .advantages__content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .advantages__item-pictures {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
     margin-right: 43px; }
+  .advantages__item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .advantages__item-text {
     text-align: left; } }
 
@@ -782,7 +789,12 @@ img {
   color: #d22856;
   text-transform: uppercase; }
 
+.price__table-wrapper {
+  overflow: hidden; }
+
 .price__table {
+  position: relative;
+  left: -33.33%;
   display: table;
   border-collapse: collapse; }
 
@@ -799,6 +811,11 @@ img {
   padding: 25px 15px 25px 23px;
   border: 2px solid #f2f2f2;
   text-align: center; }
+
+.price__cell:first-child {
+  background-color: transparent;
+  font-size: 0;
+  border: none; }
 
 .price__title {
   background-color: #283645;
@@ -864,6 +881,9 @@ img {
   padding: 16px 45px;
   border-radius: 25px;
   margin-bottom: 30px; }
+  .promo__button:hover {
+    background-color: #ffffff;
+    color: #1d2631; }
 
 .promo__text {
   font-size: 50px;

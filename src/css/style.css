@@ -813,9 +813,7 @@ img {
   text-align: center; }
 
 .price__cell:first-child {
-  background-color: transparent;
-  font-size: 0;
-  border: none; }
+  display: none; }
 
 .price__title {
   background-color: #283645;
@@ -835,7 +833,7 @@ img {
   border-right: 2px solid #f2f2f2; }
 
 .price__title:first-child {
-  background-color: transparent; }
+  display: none; }
 
 .price__title-package {
   font-size: 18px;
@@ -949,16 +947,15 @@ img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    position: relative; }
+    position: relative;
+    padding-top: 75px; }
   .promo__heading {
     display: block;
     max-width: 208px;
     margin-bottom: 35px; }
   .promo__picture {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1; }
+    bottom: 0; }
   .promo__content-wrapper {
     background-color: transparent;
     z-index: 2; } }

@@ -1,7 +1,4 @@
 .promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .promo__heading {
@@ -64,7 +61,6 @@
 
 .promo__content-wrapper {
   background-color: #1d2631;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,9 +83,8 @@
 @media(min-width: $tablet-width) {
   .promo {
     display: flex;
-    flex-direction: row-reverse;
-    position: relative;
     padding-top: 75px;
+    justify-content: center;
   }
 
   .promo__heading {
@@ -99,8 +94,7 @@
   }
 
   .promo__picture {
-    position: absolute;
-    bottom: 0;
+    order: 2;
   }
 
   .promo__content-wrapper {

@@ -464,7 +464,7 @@ img {
 .page-header__logo-link {
   margin-right: auto; }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .page-header {
     padding: 25px 20px 40px; } }
 
@@ -554,10 +554,14 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
+  .advantages__text {
+    font-size: 40px; }
   .advantages__text:first-child {
     max-width: 593px;
     margin-bottom: 0; }
+  .advantages__text:nth-child(2) {
+    max-width: 352px; }
   .advantages__content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -674,7 +678,7 @@ img {
           align-items: center;
   margin-bottom: 25px; }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .contact__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -851,18 +855,6 @@ img {
 .container {
   padding: 0 20px; }
 
-.promo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
 .promo__heading {
   font-size: 40px;
   font-weight: 300;
@@ -913,7 +905,6 @@ img {
 
 .promo__content-wrapper {
   background-color: #1d2631;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,24 +929,23 @@ img {
 .promo__picture {
   display: block; }
 
-@media (min-width: 768px) {
+@media (min-width: 660px) {
   .promo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    position: relative;
-    padding-top: 75px; }
+    padding-top: 75px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .promo__heading {
     display: block;
     max-width: 208px;
     margin-bottom: 35px; }
   .promo__picture {
-    position: absolute;
-    bottom: 0; }
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
   .promo__content-wrapper {
     background-color: transparent;
     z-index: 2; } }

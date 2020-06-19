@@ -63,9 +63,17 @@
 }
 
 @media(min-width: $tablet-width) {
+  .advantages__text {
+    font-size: 40px;
+  }
+
   .advantages__text:first-child {
     max-width: 593px;
     margin-bottom: 0;
+  }
+
+  .advantages__text:nth-child(2) {
+    max-width: 352px;
   }
 
   .advantages__content-wrapper {

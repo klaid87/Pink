@@ -663,7 +663,8 @@ img {
 .contact__link {
   font-size: 24px;
   font-weight: 300;
-  color: #d22856; }
+  color: #d22856;
+  text-align: center; }
 
 .contact__list-item {
   display: -webkit-box;
@@ -798,9 +799,16 @@ img {
 
 .price__table {
   position: relative;
-  left: -33.33%;
   display: table;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.price__title,
+.price__cell {
+  min-width: 280px; }
 
 .price__row {
   display: table-row; }
@@ -814,14 +822,40 @@ img {
   text-transform: uppercase;
   padding: 25px 15px 25px 23px;
   border: 2px solid #f2f2f2;
-  text-align: center; }
+  text-align: left; }
+
+.price__cell-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.price__cell-option {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645; }
+
+.price__cell-icon {
+  width: 35px;
+  height: 30px;
+  display: inline-block;
+  background: url("../images/svg/yes.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  .price__cell-icon--not {
+    background: url("../images/svg/no.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
 
 .price__cell:first-child {
   display: none; }
 
 .price__title {
   background-color: #283645;
-  padding: 25px 90px; }
+  padding: 25px 25px; }
 
 .price__title-wrapper {
   display: -webkit-box;
@@ -968,7 +1002,7 @@ img {
   outline: none; }
   .switch__button:hover {
     background-color: #7e868f; }
-  .switch__button:focus {
+  .switch__button--active {
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0 5px #283645;
             box-shadow: 0 0 0 5px #283645;

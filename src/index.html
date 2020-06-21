@@ -38,7 +38,7 @@
       <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
       <section class="promo">
         <picture class="promo__picture picture">
-          <source media="(min-width: 768px)" srcset="images/pictures/promo/iphone-6-tablet.png">
+          <source media="(min-width: 660px)" srcset="images/pictures/promo/iphone-6-tablet.png">
           <img class="promo__image" src="images/pictures/promo/iphone-6.png"
             alt="Изображение Iphone-6 c приложением Pink">
         </picture>
@@ -97,7 +97,7 @@
           </li>
         </ul>
         <picture class="advantages__item-pictures picture">
-          <source media="(min-width: 768px)" srcset="images/pictures/advantages/iphone-screen-tablet.png">
+          <source media="(min-width: 660px)" srcset="images/pictures/advantages/iphone-screen-tablet.png">
           <img class="advantages__item-image" src="images/pictures/advantages/iphone-screen.png"
             alt="Скрин Iphone 5 со смайликом">
         </picture>
@@ -128,7 +128,8 @@
         </li>
       </ul>
       <div class="switch">
-        <button class="switch__button button" type="button"><span class="visually-hidden">1</span></button>
+        <button class="switch__button switch__button--active button" type="button"><span
+            class="visually-hidden">1</span></button>
         <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
         <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
       </div>
@@ -163,25 +164,41 @@
           <tr class="price__row">
             <td class="price__cell">Розовый фильтр</td>
             <td class="price__cell">есть</td>
-            <td class="price__cell">есть</td>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <span class="price__cell-option">Розовый фильтр</span>
+                <span class="price__cell-icon"></span>
+              </div>
+            </td>
             <td class="price__cell">есть</td>
           </tr>
           <tr class="price__row">
             <td class="price__cell">Смайлики</td>
             <td class="price__cell">нет</td>
-            <td class="price__cell">есть</td>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <span class="price__cell-option">смайлики</span>
+                <span class="price__cell-icon"></span>
+              </div>
+            </td>
             <td class="price__cell">есть</td>
           </tr>
           <tr class="price__row">
             <td class="price__cell">Комментарий</td>
             <td class="price__cell">нет</td>
-            <td class="price__cell">нет</td>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <span class="price__cell-option">Комментарий</span>
+                <span class="price__cell-icon price__cell-icon--not"></span>
+              </div>
+            </td>
             <td class="price__cell">есть</td>
           </tr>
         </table>
       </div>
       <div class="switch">
-        <button class="switch__button button" type="button"><span class="visually-hidden">1</span></button>
+        <button class="switch__button switch__button--active button" type="button"><span
+            class="visually-hidden">1</span></button>
         <button class="switch__button button" type="button"><span class="visually-hidden">2</span></button>
         <button class="switch__button button" type="button"><span class="visually-hidden">3</span></button>
       </div>
@@ -202,7 +219,7 @@
         </li>
         <li class="contact__list-item">
           <strong class="contact__subtext">Приезжайте в гости:</strong>
-          <a class="contact__link link" href="#">ул. Большая Конюшенная, 19/8</a>
+          <a class="contact__link link" href="#">ул. Большая<br> Конюшенная, 19/8</a>
         </li>
       </ul>
     </section>

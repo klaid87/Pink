@@ -64,3 +64,33 @@
 
 }
 
+@media(min-width: $desktop-width) {
+  
+  .navigation__list {
+    margin: 0;
+    display: flex;
+  }
+
+  .navigation__item {
+    background-color: transparent;
+    border: none;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: none;
+  }
+
+  .navigation__item:not(:last-child) {
+    margin-right: 80px;
+  }
+
+  .navigation__button {
+    display: none;
+  }
+
+}
+  

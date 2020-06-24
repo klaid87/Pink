@@ -25,3 +25,15 @@
  }
 }
 
+@media(min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-header__logo-link {
+    margin: 0;
+    margin-right: auto;
+  }
+}
+

@@ -14,7 +14,15 @@
 }
 
 @media(min-width: $tablet-width) {
-  
+  .greeting {
+    padding-top: 73px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .greeting {
+    padding-top: 100px;
+  }
 }
 
 

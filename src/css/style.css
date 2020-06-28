@@ -509,9 +509,12 @@ img {
   padding-top: 175px; }
 
 .greeting__heading {
-  font-size: 50px;
+  font-size: 24px;
   font-weight: 300;
-  color: #ffffff; }
+  color: #ffffff;
+  max-width: 230px;
+  text-align: center;
+  margin: 0 auto; }
 
 @media (min-width: 660px) {
   .greeting {
@@ -585,6 +588,9 @@ img {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.advantages__item--main {
+  display: none; }
+
 @media (min-width: 660px) {
   .advantages__text {
     font-size: 40px; }
@@ -610,7 +616,17 @@ img {
         -ms-flex-align: start;
             align-items: flex-start; }
   .advantages__item-text {
-    text-align: left; } }
+    text-align: left; }
+  .advantages__item--main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .advantages__item-link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+    font-weight: 400;
+    text-decoration: underline; } }
 
 @media (min-width: 960px) {
   .advantages {
@@ -629,9 +645,11 @@ img {
   .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .advantages__item {
-    width: 33.3%;
+    width: calc(100% / 3);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -642,12 +660,10 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  .advantages__item:not(:last-child) {
-    margin-right: 95px; }
   .advantages__item::before {
     content: "";
     display: block;
-    width: 186px;
+    width: 292px;
     height: 302px;
     margin-bottom: 55px; }
   .advantages__item--first::before {
@@ -656,6 +672,25 @@ img {
     background: url("../images/pictures/advantages/Iphone-screen-2.png"); }
   .advantages__item--third::before {
     background: url("../images/pictures/advantages/Iphone-screen-3.png"); }
+  .advantages__item--main {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .advantages__item--main::before {
+      width: 298px;
+      height: 345px;
+      margin-right: 70px;
+      background: url("../images/pictures/advantages/timer.png");
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
+    .advantages__item--main .advantages__title {
+      max-width: none;
+      text-align: left; }
+    .advantages__item--main .advantages__item-text {
+      max-width: none;
+      text-align: left; }
   .advantages__title {
     font-size: 30px;
     line-height: 30px;
@@ -666,7 +701,10 @@ img {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
-    text-align: center; } }
+    text-align: center; }
+  .advantages__item-link {
+    font-size: 18px;
+    line-height: 30px; } }
 
 .reviews {
   padding: 50px 0 0 0; }
@@ -793,16 +831,31 @@ img {
 .page-footer__logo-link {
   margin-bottom: 40px; }
 
+.profile {
+  padding: 55px 0 0 0; }
+
 .profile__title {
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
-  color: #283645; }
+  color: #283645;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto; }
+
+.profile__title:nth-child(3) {
+  display: none; }
 
 .profile__label {
   line-height: 30px;
   font-weight: 400;
   color: #d22856;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+
+.profile__field {
+  padding: 22px 20px;
+  margin-bottom: 27px; }
 
 .profile__field,
 .profile__field-textarea {
@@ -819,7 +872,9 @@ img {
   line-height: 18px;
   font-weight: 400;
   color: #d22856;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  max-width: 223px;
+  text-align: center; }
 
 .profile__label-checkbox,
 .profile__label-radio {
@@ -846,7 +901,17 @@ img {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  max-width: 280px; }
+
+.profile__group {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 660px) {
+  .profile__title:nth-child(3) {
+    display: block; } }
 
 .photo__agitation {
   line-height: 30px;
@@ -974,9 +1039,14 @@ img {
   color: #ffffff; }
 
 .container {
-  max-width: 940px;
-  padding: 0 10px;
-  margin: 0 auto; }
+  min-width: 320px;
+  padding: 0 20px; }
+
+@media (min-width: 960px) {
+  .container {
+    padding: 0 10px;
+    max-width: 960px;
+    margin: 0 auto; } }
 
 .promo__heading {
   font-size: 40px;

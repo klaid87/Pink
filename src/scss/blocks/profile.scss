@@ -1,7 +1,19 @@
+.profile {
+  padding: 55px 0 0 0;
+}
+
 .profile__title {
+  font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: #283645;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.profile__title:nth-child(3){
+  display: none;
 }
 
 .profile__label {
@@ -9,6 +21,12 @@
   font-weight: 400;
   color: #d22856;
   text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.profile__field {
+  padding: 22px 20px;
+  margin-bottom: 27px;
 }
 
 .profile__field,
@@ -29,6 +47,8 @@
   font-weight: 400;
   color: #d22856;
   text-transform: uppercase;
+  max-width: 223px;
+  text-align: center;
 }
 
 .profile__label-checkbox,
@@ -55,4 +75,17 @@
 .profile__wrapper-field {
   display: flex;
   flex-direction: column;
+  max-width: 280px;
+}
+
+.profile__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media(min-width: $tablet-width) {
+  .profile__title:nth-child(3) {
+    display: block;
+  }
 }

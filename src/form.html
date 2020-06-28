@@ -17,20 +17,20 @@
     <nav class="page-header__navigation navigation">
       <ul class="navigation__list list">
         <li class="navigation__item">
-          <a class="navigation__link link" href="index.html">Главная</a>
+          <a class="navigation__link link" href="#">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link link" href="#">Фотографии</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link link" href="#">Конкурс</a>
+          <a class="navigation__link link" href="form.html">Конкурс</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link link" href="#">HTML Academy</a>
         </li>
       </ul>
-      <button class="navigation__button-close button" type="button">Закрыть</button>
     </nav>
+    <button class="navigation__button button" type="button"><span class="visually-hidden">Закрыть</span></button>
   </header>
 
   <main class="page-main">
@@ -41,20 +41,21 @@
     <section class="profile">
       <h2 class="visually-hidden">Анкета пользователя</h2>
       <p class="profile__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту! Пожалуйста, заполните</p>
+        бонусную карту!</p>
+      <p class="profile__title">Пожалуйста, заполните форму ниже:</p>  
       <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="profile__group">
           <legend class="visually-hidden">Инициалы</legend>
-          <p class="profile__wrapper-field">
+          <p class="profile__wrapper-field text">
             <label class="profile__label" for="surname-id">Фамилия:</label>
             <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию*"
               required>
           </p>
-          <p class="profile__wrapper-field">
+          <p class="profile__wrapper-field text">
             <label class="profile__label" for="name-id">Имя:</label>
             <input id="name-id" class="profile__field" type="text" name="name" placeholder="Укажите ваше имя*" required>
           </p>
-          <p class="profile__wrapper-field">
+          <p class="profile__wrapper-field text">
             <label class="profile__label" for="patronymic-id">Отчество:</label>
             <input id="patronymic-id" class="profile__field" type="text" name="patronymic"
               placeholder="Ну и отчество тоже">
@@ -91,11 +92,11 @@
         </fieldset>
         <fieldset class="profile__group">
           <legend class="visually-hidden">Контактная информация</legend>
-          <p class="profile__wrapper-field">
+          <p class="profile__wrapper-field text">
             <label class="profile__label" for="phone-id">Номер телефона</label>
             <input id="phone-id" class="profile__field" type="text" name="phone" placeholder="Номер,пожалуйста">
           </p>
-          <p class="profile__wrapper-field">
+          <p class="profile__wrapper-field text">
             <label class="profile__label" for="mail-id">Адрес почты</label>
             <input id="mail-id" class="profile__field" type="mail" name="mail" placeholder="Введите почту*" required>
           </p>

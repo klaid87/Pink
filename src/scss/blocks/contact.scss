@@ -42,17 +42,26 @@
 }
 
 @media(min-width: $tablet-width) {
+  .contact__text {
+    font-size: 40px;
+  }
+
   .contact__list {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 
   .contact__list-item:nth-child(1),
   .contact__list-item:nth-child(2) {
     width: 50%;
+    margin-bottom: 55px;
   }
 
   .contact__list-item:nth-child(3) {
     flex-grow: 2;
+  }
+
+  .contact__subtext {
+    margin-bottom: 15px;
   }
 }

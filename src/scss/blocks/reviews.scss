@@ -35,3 +35,26 @@
 .reviews__autor-subtext {
   display: none;
 }
+
+@media(min-width: $tablet-width) {
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+    order: -1;
+    max-width: 620px;
+    margin-bottom: 45px;
+  }
+
+  .reviews__autor {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .reviews__autor-subtext {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+  }
+}

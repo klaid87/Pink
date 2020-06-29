@@ -102,5 +102,45 @@
 }
 
 @media(min-width: $tablet-width) {
-  
+  .price__table-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .price__table {
+   position: static;
+   left: -50%;
+   transform: translateX(0);
+  }
+
+  .price__title {
+    padding: 20px 40px;
+  }
+
+  .price__title-package {
+    font-size: 16px;
+  }
+
+  .price__title-cost {
+    font-size: 18px;
+  }
+
+  .price__cell:first-child {
+    display: table-cell;
+  }
+
+  .price__title:first-child {
+    display: block;
+    background-color: transparent;
+  }
+
+  .price__cell-container {
+    justify-content: center;
+  }
+
+  .price__cell-option {
+    display: none;
+  }
+
+
 }

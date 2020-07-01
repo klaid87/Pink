@@ -12,3 +12,9 @@
 .page-footer__logo-link {
   margin-bottom: 40px;
 }
+
+@media(min-width: $tablet-width) {
+.page-footer {
+  display: flex;
+}
+}

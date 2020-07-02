@@ -1,0 +1,59 @@
+.research {
+  display: none;
+}
+
+@media(min-width: $tablet-width) {
+.research {
+  display: block;
+  padding: 60px 0 0 0;
+}
+
+.research__content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 265px;
+    height: 276px;
+    background-image: url("../images/pictures/research/timer-tablet.png");
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-right: 45px;
+  }
+}
+
+.research__text-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.research__title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  max-width: 175px;
+  margin-bottom: 15px;
+}
+
+.research__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.research__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+}

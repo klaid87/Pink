@@ -44,7 +44,19 @@
 }
 
 .advantages__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #f2f2f2;
+  
+  &::before {
+    content: "";
+    display: block;
+    width: 157px;
+    height: 278px;
+    background-image: url("../images/pictures/advantages/iphone-screen.png");
+    order: 1;
+  }
 }
 
 .advantages__item-pictures {
@@ -71,12 +83,18 @@
 
   .advantages__content-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-  }
-
-  .advantages__item-pictures {
-    order: -1;
-    margin-right: 43px;
+    
+    &::before {
+      content: "";
+      display: block;
+      width: 268px;
+      height: 483px;
+      background-image: url("../images/pictures/advantages/iphone-screen-tablet.png");
+      order: -1;
+      margin-right: 45px;
+    }
   }
 
   .advantages__item {
@@ -89,6 +107,16 @@
 
   .advantages__item--main {
     display: flex;
+
+    &::before {
+      content: "";
+      width: 298px;
+      height: 345px;
+      margin-right: 70px;
+      background-image: url("../images/pictures/advantages/timer-tablet.png");
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+    }
   }
 
   .advantages__item-link {
@@ -121,7 +149,7 @@
     max-width: 440px;
   }
 
-  .advantages__item-pictures {
+  .advantages__content-wrapper::before {
     display: none;
   }
 

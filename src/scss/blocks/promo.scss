@@ -21,7 +21,11 @@
 
   &:hover {
     background-color: #ffffff;
-    color: #1d2631;
+    color: #d22856;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3)
   }
 }
 

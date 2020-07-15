@@ -11,155 +11,256 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22" alt="Логотип Pink">
-    </a>
-    <nav class="page-header__navigation navigation">
-      <ul class="navigation__list list">
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">Фотографии</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="form.html">Конкурс</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <button class="navigation__button button" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <div class="container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22"
+            alt="Логотип Pink">
+        </a>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="navigation__button button" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </div>
   </header>
 
   <main class="page-main">
-    <section class="greeting">
+    <section class="greeting greeting--form">
       <h1 class="greeting__heading heading">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </section>
 
     <section class="profile">
       <h2 class="visually-hidden">Анкета пользователя</h2>
       <p class="profile__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту!</p>
-      <p class="profile__title">Пожалуйста, заполните форму ниже:</p>  
-      <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="profile__group">
-          <legend class="visually-hidden">Инициалы</legend>
-          <p class="profile__wrapper-field text">
-            <label class="profile__label" for="surname-id">Фамилия:</label>
-            <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию*"
-              required>
+        бонусную карту!
+        <span class="profile__title--text">Пожалуйста, заполните форму ниже:</span>
+      </p>
+      <div class="container">
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="profile__group">
+            <div class="container">
+              <legend class="visually-hidden">Инициалы</legend>
+              <p class="profile__wrapper-field text">
+                <label class="profile__label" for="surname-id">Фамилия:</label>
+                <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию*"
+                  required>
+              </p>
+              <p class="profile__wrapper-field text">
+                <label class="profile__label" for="name-id">Имя:</label>
+                <input id="name-id" class="profile__field" type="text" name="name" placeholder="Укажите ваше имя*"
+                  required>
+              </p>
+              <p class="profile__wrapper-field text">
+                <label class="profile__label" for="patronymic-id">Отчество:</label>
+                <input id="patronymic-id" class="profile__field" type="text" name="patronymic"
+                  placeholder="Ну и отчество тоже">
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="profile__group profile__group--dark">
+            <div class="container">
+              <h3 class="profile__subheading">Ваши безбашенные достижения в путешествии</h3>
+              <legend class="profile__legend">С каким приложением путешествовали?</legend>
+              <ul class="profile__list list">
+                <li class="profile__item">
+                  <input id="selfie-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="selfie"
+                    checked>
+                  <label class="profile__label-checkbox" for="selfie-id">Сделал селфи с акулой</label>
+                </li>
+                <li class="profile__item">
+                  <input id="burnt-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="burnt"
+                    checked>
+                  <label class="profile__label-checkbox" for="burnt-id">Обгорел на пляже</label>
+                </li>
+                <li class="profile__item">
+                  <input id="saw-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="saw">
+                  <label class="profile__label-checkbox" for="saw-id">Видел Чака Норриса</label>
+                </li>
+                <li class="profile__item">
+                  <input id="bought-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="bought">
+                  <label class="profile__label-checkbox" for="bought-id">Накупил сувениров</label>
+                </li>
+                <li class="profile__item">
+                  <input id="kept-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="kept"
+                    checked>
+                  <label class="profile__label-checkbox" for="kept-id">Удержал башню</label>
+                </li>
+                <li class="profile__item">
+                  <input id="defeated-id" class="profile__input-checkbox visually-hidden" type="checkbox"
+                    name="defeated">
+                  <label class="profile__label-checkbox" for="defeated-id">Разгромил отель</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="profile__group">
+            <div class="container">
+              <legend class="visually-hidden">Контактная информация</legend>
+              <p class="profile__wrapper-field text">
+                <label class="profile__label" for="phone-id">Номер телефона</label>
+                <input id="phone-id" class="profile__field" type="text" name="phone" placeholder="Номер,пожалуйста">
+              </p>
+              <p class="profile__wrapper-field text">
+                <label class="profile__label" for="mail-id">Адрес почты</label>
+                <input id="mail-id" class="profile__field" type="mail" name="mail" placeholder="Введите почту*"
+                  required>
+              </p>
+            </div>
+          </fieldset>
+          <fieldset class="profile__group profile__group--dark">
+            <div class="container">
+              <h3 class="profile__subheading profile__subheading--radio">С каким приложением путешествовали?</h3>
+              <legend class="profile__legend">С каким приложением путешествовали?</legend>
+              <ul class="profile__list list">
+                <li class="profile__item">
+                  <input id="ios-id" class="visually-hidden" type="radio" name="radio" value="ios" checked>
+                  <label class="profile__label-radio" for="ios-id">Pink для iOS</label>
+                </li>
+                <li class="profile__item">
+                  <input id="android-id" class="visually-hidden" type="radio" name="radio" value="android">
+                  <label class="profile__label-radio" for="android-id">Pink на Android</label>
+                </li>
+                <li class="profile__item">
+                  <input id="windows-id" class="visually-hidden" type="radio" name="radio" value="windows">
+                  <label class="profile__label-radio" for="windows-id">Windows Phone</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="profile__group">
+            <div class="container">
+              <h3 class="profile__subheading">Опишите свои эмоции</h3>
+              <legend class="profile__legend">Опишите свои эмоции</legend>
+              <label class="visually-hidden" for="emotions-id">Поле ввода эмоций о приложении Pink</label>
+              <textarea id="emotions-id" class="profile__field-textarea" name="emotions"
+                placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </div>
+          </fieldset>
+          <p class="profile__button-wrapper text">
+            <button class="profile__button button" type="submit">Отправить форму</button><br>
+            <small class="profile__hint">
+              <sup class="profile__hint-icon">*</sup>— обязательные поля
+            </small>
           </p>
-          <p class="profile__wrapper-field text">
-            <label class="profile__label" for="name-id">Имя:</label>
-            <input id="name-id" class="profile__field" type="text" name="name" placeholder="Укажите ваше имя*" required>
-          </p>
-          <p class="profile__wrapper-field text">
-            <label class="profile__label" for="patronymic-id">Отчество:</label>
-            <input id="patronymic-id" class="profile__field" type="text" name="patronymic"
-              placeholder="Ну и отчество тоже">
-          </p>
-        </fieldset>
-        <fieldset class="profile__group profile__group--dark">
-          <legend class="profile__legend">Ваши безбашенные достижения в путешествии</legend>
-          <ul class="profile__list list">
-            <li class="profile__item">
-              <input id="selfie-id" class="profile__input-checkbox" type="checkbox" name="selfie" checked>
-              <label class="profile__label-checkbox" for="selfie-id">Сделал селфи с акулой</label>
-            </li>
-            <li class="profile__item">
-              <input id="burnt-id" class="profile__input-checkbox" type="checkbox" name="burnt" checked>
-              <label class="profile__label-checkbox" for="burnt-id">Обгорел на пляже</label>
-            </li>
-            <li class="profile__item">
-              <input id="saw-id" class="profile__input-checkbox" type="checkbox" name="saw">
-              <label class="profile__label-checkbox" for="saw-id">Видел Чака Норриса</label>
-            </li>
-            <li class="profile__item">
-              <input id="bought-id" class="profile__input-checkbox" type="checkbox" name="bought">
-              <label class="profile__label-checkbox" for="bought-id">Накупил сувениров</label>
-            </li>
-            <li class="profile__item">
-              <input id="kept-id" class="profile__input-checkbox" type="checkbox" name="kept" checked>
-              <label class="profile__label-checkbox" for="kept-id">Удержал башню</label>
-            </li>
-            <li class="profile__item">
-              <input id="defeated-id" class="profile__input-checkbox" type="checkbox" name="defeated">
-              <label class="profile__label-checkbox" for="defeated-id">Разгромил отель</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="profile__group">
-          <legend class="visually-hidden">Контактная информация</legend>
-          <p class="profile__wrapper-field text">
-            <label class="profile__label" for="phone-id">Номер телефона</label>
-            <input id="phone-id" class="profile__field" type="text" name="phone" placeholder="Номер,пожалуйста">
-          </p>
-          <p class="profile__wrapper-field text">
-            <label class="profile__label" for="mail-id">Адрес почты</label>
-            <input id="mail-id" class="profile__field" type="mail" name="mail" placeholder="Введите почту*" required>
-          </p>
-        </fieldset>
-        <fieldset class="profile__group profile__group--dark">
-          <legend class="profile__legend">С каким приложением путешествовали?</legend>
-          <ul class="profile__list list">
-            <li class="profile__item">
-              <input id="ios-id" class="visually-hidden" type="radio" name="radio" value="ios">
-              <label class="profile__label-radio" for="ios-id">Pink для iOS</label>
-            </li>
-            <li class="profile__item">
-              <input id="android-id" class="visually-hidden" type="radio" name="radio" value="android">
-              <label class="profile__label-radio" for="android-id">Pink на Android</label>
-            </li>
-            <li class="profile__item">
-              <input id="windows-id" class="visually-hidden" type="radio" name="radio" value="windows">
-              <label class="profile__label-radio" for="windows-id">Windows Phone</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="profile__group">
-          <legend class="profile__legend">Опишите свои эмоции</legend>
-          <label class="visually-hidden" for="emotions-id">Поле ввода эмоций о приложении Pink</label>
-          <textarea id="emotions-id" class="profile__field-textarea" name="emotions"
-            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <button class="profile__button button" type="submit">Отправить форму</button><br>
-        <!-- Как грамотно оформить этот элемент -->
-        <small>
-          <sup>*</sup>— обязательные поля
-        </small>
-      </form>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo-link">
-      <img class="page-footer__logo-image" src="" alt="Логотип Pink">
-    </a>
-    <ul class="social__list list">
-      <li class="social__item">
-        <a class="social__link social__link--twitter link" href="https://twitter.com/explore">
-          <span class="visually-hidden">Twittre</span>
+    <div class="container">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link link">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 146.3 40.4" style="enable-background:new 0 0 146.3 40.4;" xml:space="preserve"
+            width="150px" height="42px">
+            <style type="text/css">
+              .st0 {
+                fill: #283645;
+              }
+
+              .st1 {
+                fill: #FFFFFF;
+              }
+
+              .st2 {
+                fill: #D22856;
+              }
+            </style>
+            <g>
+              <path class="st0" d="M71.9,18.7c0-0.7,0.6-1.3,1.3-1.3h7.2c5.1,0,8.4,2.7,8.4,7.1v0.1c0,4.9-4.1,7.4-8.9,7.4h-5.5v6.8
+		c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L71.9,18.7L71.9,18.7z M80,29.6c3.7,0,6.2-2,6.2-5v-0.1c0-3.2-2.4-4.9-6.1-4.9h-5.7
+		v9.9L80,29.6L80,29.6z" />
+              <path class="st0" d="M93.6,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v20.3c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3
+		V18.5z" />
+              <path class="st0" d="M102.7,18.5c0-0.7,0.6-1.3,1.3-1.3h0.4c0.6,0,0.9,0.3,1.3,0.7l13.7,17.4v-17c0-0.7,0.5-1.3,1.3-1.3
+		c0.7,0,1.2,0.6,1.2,1.3v20.3c0,0.7-0.5,1.2-1.2,1.2h-0.1c-0.5,0-0.9-0.3-1.3-0.8l-14-17.9v17.4c0,0.7-0.5,1.3-1.3,1.3
+		c-0.7,0-1.2-0.6-1.2-1.3L102.7,18.5L102.7,18.5z" />
+              <path class="st0" d="M128.2,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v12.3l12.8-13.2c0.3-0.3,0.6-0.5,1-0.5
+		c0.7,0,1.2,0.6,1.2,1.3c0,0.4-0.2,0.6-0.4,0.9l-8,7.9l8.6,10.6c0.2,0.3,0.4,0.5,0.4,0.9c0,0.7-0.6,1.3-1.3,1.3
+		c-0.5,0-0.8-0.3-1-0.6L135.6,29l-4.9,4.9v4.9c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L128.2,18.5L128.2,18.5z" />
+            </g>
+            <path class="st1" d="M60.5,28.3" />
+            <path class="st2"
+              d="M60.5,28c0,0-5.2-21.4-5.2-21.4C54.9,4.3,52.7,0,46.7,0c-0.8,0-1.5,0.7-1.5,1.5S45.9,3,46.7,3
+	c4.9,0,5.6,3.7,5.6,4.1l4.8,19.7H55c-0.7-5.9-5.8-10.5-11.9-10.5s-11.2,4.6-11.9,10.5h-1.8c-0.7-5.9-5.8-10.5-11.9-10.5
+	S6.2,20.9,5.5,26.8H3.4L8.2,7.1C8.3,6.7,9,3,13.8,3c0.8,0,1.5-0.7,1.5-1.5S14.7,0,13.8,0c-6,0-8.2,4.3-8.6,6.7
+	c0,0-5.2,21.4-5.2,21.4c-0.3,1.1,0.5,1.8,1.4,1.8c0,0,0,0,0,0h4c0.7,5.9,5.8,10.5,11.9,10.5s11.2-4.6,11.9-10.5h1.8
+	c0.7,5.9,5.8,10.5,11.9,10.5S54.3,35.8,55,29.8h4c0,0,0,0,0,0C59.9,29.8,60.7,29.1,60.5,28z M26.3,29.8c-0.7,4.3-4.4,7.5-8.9,7.5
+	s-8.2-3.3-8.9-7.5c-0.1-0.5-0.1-1-0.1-1.5c0-0.5,0.1-1,0.1-1.5c0.7-4.3,4.4-7.5,8.9-7.5s8.2,3.3,8.9,7.5c0.1,0.5,0.1,1,0.1,1.5
+	C26.5,28.9,26.4,29.4,26.3,29.8z M52,29.8c-0.7,4.3-4.4,7.5-8.9,7.5c-4.5,0-8.2-3.3-8.9-7.5c-0.1-0.5-0.1-1-0.1-1.5
+	c0-0.5,0.1-1,0.1-1.5c0.7-4.3,4.4-7.5,8.9-7.5c4.5,0,8.2,3.3,8.9,7.5c0.1,0.5,0.1,1,0.1,1.5C52.1,28.9,52.1,29.4,52,29.8z" />
+          </svg>
         </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--facebook link" href="https://www.facebook.com/">
-          <span class="visually-hidden">Facebook</span>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link social__link--google-play link" href="https://play.google.com/store">
-          <span class="visually-hidden">Google play</span>
-        </a>
-      </li>
-    </ul>
-    <p class="footer-copyright">
-      <span class="footer-copyright__text">Разработано</span>
-      <a class="footer-copyright__link link" href="https://htmlacademy.ru">
-        <span class="visually-hidden">HTML ACAdemy</span>
-      </a>
-    </p>
+        <ul class="social__list list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter link" href="https://twitter.com/explore">
+              <svg class="social__icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.5 14.7" xml:space="preserve"
+                width="19px" height="17px">
+                <g id="W6EeEF_1_">
+                  <g>
+                    <path d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+			c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+			c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+			c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z" />
+                  </g>
+                </g>
+              </svg>
+              <span class="visually-hidden">Twittre</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook link" href="https://www.facebook.com/">
+              <svg class="social__icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8.7 18.9"
+                style="enable-background:new 0 0 8.7 18.9;" xml:space="preserve" width="10px" height="20px">
+                <path d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2c0,3.1,0,6.2,0,9.3
+	            c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z" />
+              </svg>
+
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--google-play link" href="https://play.google.com/store">
+              <svg class="social__icon" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14.6 14"
+                style="enable-background:new 0 0 14.6 14;" xml:space="preserve" width="17px" height="15px">
+                <path
+                  d="M1.8,13.8c-1,0.5-1.8,0-1.8-1.1V1.3c0-1.1,0.8-1.6,1.8-1.1l12.1,5.9c1,0.5,1,1.3,0,1.7L1.8,13.8z" />
+              </svg>
+              <span class="visually-hidden">Google play</span>
+            </a>
+          </li>
+        </ul>
+        <p class="footer-copyright text">
+          <span class="footer-copyright__text">Разработано</span>
+          <a class="footer-copyright__link link" href="https://htmlacademy.ru">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 153.4 194.2" width="30" height="35">
+              <path
+                d="M77.5.1l-.8-.1L0 8v140.6l76.7 45.6 76.7-45.6V8L77.5.1zm65.9 142.8l-66.7 39.6L10 142.8V85.2l66.4 39.5.1 7.2L31 104.8l-.1 7 45.7 27.5.1 7.3L31 119.4l-.1 7 45.7 27.5 46.2-27.6v-7h-.1V96.5l20.6-12.3.1 58.7h0zm-.1-66.1l-18.2 10.7-8.4 5-40.1-23.9-.1 7L110.8 96l-.3.2-.7.4-4.9 2.9-28.3-16.9-.1 7 22.4 13.3-5.3 3.5-.1.1-16.9-10-.1 7 11.1 6.5-11.3 6.8-66-39.3 66.1-39.8h0l66.9 39.1zm.1-7l-67-39.5h0L10.1 69.8V17.1l66.7-7 66.7 7v52.7h-.1z"
+                stroke="#231f20" stroke-miterlimit="10" />
+            </svg>
+            <span class="visually-hidden">HTML ACAdemy</span>
+          </a>
+        </p>
+      </div>
+    </div>
   </footer>
 </body>
 

@@ -16,6 +16,7 @@
 }
 
 .page-header__logo-link {
+  display: inline-block;
   margin-right: auto;
 }
 
@@ -26,8 +27,9 @@
 }
 
 @media(min-width: $desktop-width) {
-  .page-header {
+  .page-header__wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 

@@ -14,8 +14,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    border-color: #283645;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
   fill: #d22856;
+  width: 19px;
+  height: 19px;
+
+  &--youtube {
+    width: 15px;
+    height: 15px;
+  }
 }

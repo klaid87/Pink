@@ -1,5 +1,5 @@
 .profile {
-  padding: 55px 0 0 0;
+  padding: 55px 0 0px 0;
 }
 
 .profile__title {
@@ -10,9 +10,10 @@
   text-align: center;
   max-width: 280px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.profile__title:nth-child(3){
+.profile__title--text { 
   display: none;
 }
 
@@ -21,7 +22,7 @@
   font-weight: 400;
   color: #d22856;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin: 0 0 15px 20px;
 }
 
 .profile__field {
@@ -34,12 +35,31 @@
   border: 2px solid #e5e5e5;
 }
 
+.profile__field-textarea {
+  padding: 23px 20px;
+  width: 100%;
+  height: 200px;
+}
+
 .profile__field[placeholder],
 .profile__field-textarea[placeholder] {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   color: #283645;
+}
+
+.profile__subheading {
+  line-height: 18px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 260px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  padding-top: 40px;
+  display: block;
 }
 
 .profile__legend {
@@ -49,6 +69,7 @@
   text-transform: uppercase;
   max-width: 223px;
   text-align: center;
+  display: none;
 }
 
 .profile__label-checkbox,
@@ -57,6 +78,70 @@
   line-height: 30px;
   font-weight: 400;
   color: #283645;
+}
+
+.profile__label-radio {
+  position: relative;
+  padding-left: 71px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -5px;
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+input[type="radio"]:checked + .profile__label-radio::before {
+  background: url("../images/pictures/profile/Shape.png") no-repeat center;
+  background-color: #ffffff;
+}
+
+.profile__label-radio:not(:checked)::before {
+  background-color: #ffffff;
+}
+
+.profile__label-radio:hover::before {
+  border-color: #283645;
+}
+
+.profile__label-radio:active::before {
+  border-color: #d22856;
+}
+
+.profile__item {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__input-checkbox + label {
+  position: relative;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+  }
+}
+
+.profile__input-checkbox:checked + label::before {
+  background: url("../images/svg/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
 }
 
 .profile__group--dark {
@@ -70,6 +155,16 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
+  padding: 20px 45px;
+  outline: none;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: #7dbd99;
+  }
 }
 
 .profile__wrapper-field {
@@ -82,10 +177,80 @@
   border: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 40px;
+  display : block;
+}
+
+.profile__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.profile__hint {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+  text-transform: uppercase;
+}
+
+.profile__hint-icon {
+  color: #d22856;
 }
 
 @media(min-width: $tablet-width) {
-  .profile__title:nth-child(3) {
-    display: block;
+  .profile__title {
+    font-size: 18px;
+    max-width: 495px;
+
+    &--text {
+      display: inline-block;
+    }
+  }
+
+  .profile__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile__group:nth-child(4) {
+    order: -2;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+  }
+
+  .profile__group:nth-child(3) {
+    order: -1;
+    margin-bottom: 0;
+  }
+
+  .profile__group:nth-child(1) {
+    order: -3;
+  }
+
+  .profile__wrapper-field {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 625px;
+  }
+
+  .profile__label {
+    margin-right: 19px;
+  }
+
+  .profile__field {
+    width: 100%;
+    padding: 15px 0 15px 22px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .profile__title {
+    max-width: 755px;
   }
 }

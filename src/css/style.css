@@ -524,6 +524,8 @@ img {
   padding-top: 175px; }
   .greeting--form {
     padding: 100px 0 50px 0; }
+  .greeting--photo {
+    padding: 100px 0 85px; }
 
 .greeting__heading {
   font-size: 24px;
@@ -1091,18 +1093,6 @@ img {
   line-height: 30px;
   color: #283645; }
 
-.profile__subheading {
-  line-height: 18px;
-  font-weight: 400;
-  color: #d22856;
-  text-transform: uppercase;
-  text-align: center;
-  max-width: 260px;
-  margin: 0 auto;
-  margin-bottom: 35px;
-  padding-top: 40px;
-  display: block; }
-
 .profile__legend {
   line-height: 18px;
   font-weight: 400;
@@ -1110,7 +1100,8 @@ img {
   text-transform: uppercase;
   max-width: 223px;
   text-align: center;
-  display: none; }
+  display: block;
+  margin: 0 auto 40px; }
 
 .profile__label-checkbox,
 .profile__label-radio {
@@ -1175,7 +1166,8 @@ input[type="radio"]:checked + .profile__label-radio::before {
   background-position: center;
   background-color: #ffffff; }
 
-.profile__group--dark {
+.profile__group--radio,
+.profile__group--checkbox {
   background-color: #f2f2f2; }
 
 .profile__button {
@@ -1249,22 +1241,35 @@ input[type="radio"]:checked + .profile__label-radio::before {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .profile__group:nth-child(4) {
+  .profile__group--radio,
+  .profile__group--checkbox {
+    background-color: #ffffff; }
+  .profile__group {
+    margin-bottom: 60px; }
+  .profile__group:not(:first-child) {
+    border: 2px solid #e5e5e5;
+    position: relative; }
+  .profile__group--radio {
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
-    margin-bottom: 0;
-    background-color: transparent;
-    border: 2px solid #e5e5e5; }
-  .profile__group:nth-child(3) {
+    background-color: transparent; }
+  .profile__group--contact {
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
-            order: -1;
-    margin-bottom: 0; }
-  .profile__group:nth-child(1) {
+            order: -1; }
+  .profile__group--initial {
     -webkit-box-ordinal-group: -2;
         -ms-flex-order: -3;
             order: -3; }
+  .profile__legend {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #ffffff;
+    max-width: none; }
   .profile__wrapper-field {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1273,12 +1278,12 @@ input[type="radio"]:checked + .profile__label-radio::before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     max-width: 625px; }
   .profile__label {
-    margin-right: 19px; }
+    margin: 0 19px 0 0; }
   .profile__field {
     width: 100%;
     padding: 15px 0 15px 22px; } }
@@ -1287,13 +1292,22 @@ input[type="radio"]:checked + .profile__label-radio::before {
   .profile__title {
     max-width: 755px; } }
 
+.photo {
+  padding: 55px 0 50px; }
+
 .photo__agitation {
   line-height: 30px;
   font-weight: 400;
-  color: #283645; }
+  color: #283645;
+  max-width: 245px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 55px; }
 
 .photo__quote {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 25px 23px 25px 18px; }
 
 .photo__autor {
   line-height: 24px;
@@ -1311,7 +1325,8 @@ input[type="radio"]:checked + .profile__label-radio::before {
 .photo__text-comment {
   line-height: 24px;
   font-weight: 400;
-  color: #283645; }
+  color: #283645;
+  max-width: 243px; }
 
 .photo__like {
   font-size: 12px;

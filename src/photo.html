@@ -11,54 +11,61 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo-link">
-      <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22" alt="Логотип Pink">
-    </a>
-    <nav class="page-header__navigation navigation">
-      <ul class="navigation__list list">
-        <li class="navigation__item">
-          <a class="navigation__link link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">Фотографии</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="form.html">Конкурс</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link link" href="#">HTML Academy</a>
-        </li>
-      </ul>
-      <button class="navigation__button-close button" type="button">Закрыть</button>
-    </nav>
+    <div class="container">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo-link">
+          <img class="page-header__logo-image" src="images/svg/logomobile.svg" width="77" height="22"
+            alt="Логотип Pink">
+        </a>
+        <nav class="page-header__navigation navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active link" href="#">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="form.html">Конкурс</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="navigation__button button" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </div>
   </header>
 
   <main class="page-main">
-    <section class="greeting">
+    <section class="greeting greeting--photo">
       <h1 class="greeting__heading">Фотографии пользователей</h1>
     </section>
 
     <section class="photo">
       <h2 class="visually-hidden">Фотографии пользователей сделанные с помощью приложения Pink</h2>
-      <p class="photo__agitation">
+      <p class="photo__agitation text">
         Взгляните на фотографии, которые выкладывают пользователи!
         Видите, как не хватает ваших?
       </p>
       <ul class="photo__list list">
         <li class="photo__item photo__item--main">
-          <picture class="photo__image-wrapper">
-            <img class="photo__image" src="http://placehold.it/1200x506"
+          <picture class="photo__image-wrapper picture">
+            <img class="photo__image" src="../src/images/pictures/photo/panorama-mobile@1x.jpg"
               alt="Фотография пользователя сделанная с помощью приложения Pink">
           </picture>
-          <blockquote class="photo__quote">
-            <cite class="photo__autor">Анна</cite>
-            <time class="photo__time" datetime="2020-05-18T12:10">(5 минут назад)</time>
-            <p class="photo__text-comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
-              трансляцию
-              в
-              перископе, задавайте свои вопросы!</p>
-            <span class="photo__like">Нравится: 215</span>
-          </blockquote>
+          <div class="container">
+            <blockquote class="photo__quote">
+              <cite class="photo__autor">Анна</cite>
+              <time class="photo__time" datetime="2020-05-18T12:10">(5 минут назад)</time>
+              <p class="photo__text-comment text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую
+                трансляцию
+                в
+                перископе, задавайте свои вопросы!</p>
+              <span class="photo__like">Нравится: 215</span>
+            </blockquote>
+          </div>
         </li>
         <li class="photo__item">
           <picture class="photo__image-wrapper">

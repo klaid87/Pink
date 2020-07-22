@@ -1,11 +1,21 @@
+.photo {
+  padding: 55px 0 50px;
+}
+
 .photo__agitation {
   line-height: 30px;
   font-weight: 400;
   color: #283645;
+  max-width: 245px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 55px;
 }
 
 .photo__quote {
   background-color: #f2f2f2;
+  margin: 0;
+  padding: 25px 23px 25px 18px;
 }
 
 .photo__autor {
@@ -27,6 +37,7 @@
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+  max-width: 243px;
 }
 
 .photo__like {

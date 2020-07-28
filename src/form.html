@@ -99,92 +99,96 @@
       <div class="container">
         <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="profile__group profile__group--initial">
-              <legend class="visually-hidden">Инициалы</legend>
-              <p class="profile__wrapper-field text">
+            <legend class="visually-hidden">Инициалы</legend>
+            <div class="profile__group-wrapper">
+              <p class="profile__wrapper-field profile__wrapper-field--initial text">
                 <label class="profile__label" for="surname-id">Фамилия:</label>
                 <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию*"
                   required>
               </p>
-              <p class="profile__wrapper-field text">
+              <p class="profile__wrapper-field profile__wrapper-field--initial text">
                 <label class="profile__label" for="name-id">Имя:</label>
                 <input id="name-id" class="profile__field" type="text" name="name" placeholder="Укажите ваше имя*"
                   required>
               </p>
-              <p class="profile__wrapper-field text">
+              <p class="profile__wrapper-field profile__wrapper-field--initial text">
                 <label class="profile__label" for="patronymic-id">Отчество:</label>
                 <input id="patronymic-id" class="profile__field" type="text" name="patronymic"
                   placeholder="Ну и отчество тоже">
               </p>
+            </div>
           </fieldset>
           <fieldset class="profile__group profile__group--checkbox">
-              <legend class="profile__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="profile__list list">
-                <li class="profile__item">
-                  <input id="selfie-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="selfie"
-                    checked>
-                  <label class="profile__label-checkbox" for="selfie-id">Сделал селфи с акулой</label>
-                </li>
-                <li class="profile__item">
-                  <input id="burnt-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="burnt"
-                    checked>
-                  <label class="profile__label-checkbox" for="burnt-id">Обгорел на пляже</label>
-                </li>
-                <li class="profile__item">
-                  <input id="saw-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="saw">
-                  <label class="profile__label-checkbox" for="saw-id">Видел Чака Норриса</label>
-                </li>
-                <li class="profile__item">
-                  <input id="bought-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="bought">
-                  <label class="profile__label-checkbox" for="bought-id">Накупил сувениров</label>
-                </li>
-                <li class="profile__item">
-                  <input id="kept-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="kept"
-                    checked>
-                  <label class="profile__label-checkbox" for="kept-id">Удержал башню</label>
-                </li>
-                <li class="profile__item">
-                  <input id="defeated-id" class="profile__input-checkbox visually-hidden" type="checkbox"
-                    name="defeated">
-                  <label class="profile__label-checkbox" for="defeated-id">Разгромил отель</label>
-                </li>
-              </ul>
+            <legend class="profile__legend profile__legend--mobile">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="profile__list list">
+              <li class="profile__item">
+                <input id="selfie-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="selfie"
+                  checked>
+                <label class="profile__label-checkbox" for="selfie-id">Сделал селфи с акулой</label>
+              </li>
+              <li class="profile__item">
+                <input id="burnt-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="burnt"
+                  checked>
+                <label class="profile__label-checkbox" for="burnt-id">Обгорел на пляже</label>
+              </li>
+              <li class="profile__item">
+                <input id="saw-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="saw">
+                <label class="profile__label-checkbox" for="saw-id">Видел Чака Норриса</label>
+              </li>
+              <li class="profile__item">
+                <input id="bought-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="bought">
+                <label class="profile__label-checkbox" for="bought-id">Накупил сувениров</label>
+              </li>
+              <li class="profile__item">
+                <input id="kept-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="kept" checked>
+                <label class="profile__label-checkbox" for="kept-id">Удержал башню</label>
+              </li>
+              <li class="profile__item">
+                <input id="defeated-id" class="profile__input-checkbox visually-hidden" type="checkbox" name="defeated">
+                <label class="profile__label-checkbox" for="defeated-id">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="profile__group profile__group--contact">
-              <legend class="visually-hidden">Контактная информация</legend>
-              <p class="profile__wrapper-field text">
-                <label class="profile__label" for="phone-id">Номер телефона</label>
-                <input id="phone-id" class="profile__field" type="text" name="phone" placeholder="Номер,пожалуйста">
-              </p>
-              <p class="profile__wrapper-field text">
-                <label class="profile__label" for="mail-id">Адрес почты</label>
-                <input id="mail-id" class="profile__field" type="mail" name="mail" placeholder="Введите почту*"
-                  required>
-              </p>
+            <legend class="profile__legend profile__legend--contact">Контактная информация</legend>
+            <p class="profile__wrapper-field profile__wrapper-field--contact text">
+              <label class="profile__label profile__label--contact profile__label--contact-phone" for="phone-id">Номер
+                телефона</label>
+              <input id="phone-id" class="profile__field profile__field--contact" type="text" name="phone"
+                placeholder="Номер,пожалуйста">
+            </p>
+            <p class="profile__wrapper-field profile__wrapper-field--contact text">
+              <label class="profile__label profile__label--contact profile__label--contact-mail" for="mail-id">Адрес
+                почты</label>
+              <input id="mail-id" class="profile__field profile__field--contact" type="mail" name="mail"
+                placeholder="Введите почту*" required>
+            </p>
           </fieldset>
           <fieldset class="profile__group profile__group--radio">
-              <legend class="profile__legend">С каким приложением путешествовали?</legend>
-              <ul class="profile__list list">
-                <li class="profile__item">
-                  <input id="ios-id" class="visually-hidden" type="radio" name="radio" value="ios" checked>
-                  <label class="profile__label-radio" for="ios-id">Pink для iOS</label>
-                </li>
-                <li class="profile__item">
-                  <input id="android-id" class="visually-hidden" type="radio" name="radio" value="android">
-                  <label class="profile__label-radio" for="android-id">Pink на Android</label>
-                </li>
-                <li class="profile__item">
-                  <input id="windows-id" class="visually-hidden" type="radio" name="radio" value="windows">
-                  <label class="profile__label-radio" for="windows-id">Windows Phone</label>
-                </li>
-              </ul>
+            <legend class="profile__legend profile__legend--mobile">С каким приложением путешествовали?</legend>
+            <ul class="profile__list list">
+              <li class="profile__item">
+                <input id="ios-id" class="visually-hidden" type="radio" name="radio" value="ios" checked>
+                <label class="profile__label-radio" for="ios-id">Pink для iOS</label>
+              </li>
+              <li class="profile__item">
+                <input id="android-id" class="visually-hidden" type="radio" name="radio" value="android">
+                <label class="profile__label-radio" for="android-id">Pink на Android</label>
+              </li>
+              <li class="profile__item">
+                <input id="windows-id" class="visually-hidden" type="radio" name="radio" value="windows">
+                <label class="profile__label-radio" for="windows-id">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="profile__group">
-              <legend class="profile__legend profile__group--textarea">Опишите свои эмоции</legend>
-              <label class="visually-hidden" for="emotions-id">Поле ввода эмоций о приложении Pink</label>
-              <textarea id="emotions-id" class="profile__field-textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <fieldset class="profile__group profile__group--textarea">
+            <legend class="profile__legend">Опишите свои эмоции</legend>
+            <label class="visually-hidden" for="emotions-id">Поле ввода эмоций о приложении Pink</label>
+            <textarea id="emotions-id" class="profile__field-textarea" name="emotions"
+              placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
           <p class="profile__button-wrapper text">
-            <button class="profile__button button" type="submit">Отправить форму</button><br>
+            <button class="profile__button button" type="submit">Отправить форму</button>
             <small class="profile__hint">
               <sup class="profile__hint-icon">*</sup>— обязательные поля
             </small>

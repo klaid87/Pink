@@ -27,7 +27,6 @@
 
 .profile__field {
   padding: 22px 20px;
-  margin-bottom: 27px;
 }
 
 .profile__field,
@@ -55,9 +54,21 @@
   color: #d22856;
   text-transform: uppercase;
   max-width: 223px;
+  width: 100%;
   text-align: center;
   display: block;
-  margin: 0 auto 40px;
+  margin-bottom: 18px;
+
+  &--contact {
+    display: none;
+  }
+
+  &--mobile {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .profile__label-checkbox,
@@ -103,9 +114,12 @@ input[type="radio"]:checked + .profile__label-radio::before {
 }
 
 .profile__item {
-  margin-bottom: 40px;
   display: flex;
   align-items: center;
+}
+
+.profile__item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .profile__input-checkbox + label {
@@ -132,12 +146,8 @@ input[type="radio"]:checked + .profile__label-radio::before {
   background-color: #ffffff;
 }
 
-.profile__group--radio,
-.profile__group--checkbox {
-  background-color: #f2f2f2;
-}
-
 .profile__button {
+  display: block;
   background-color: #2aab6d;
   color: #ffffff;
   text-transform: uppercase;
@@ -146,6 +156,8 @@ input[type="radio"]:checked + .profile__label-radio::before {
   font-weight: 700;
   padding: 20px 45px;
   outline: none;
+  margin: 0 auto;
+  margin-bottom: 45px;
 
   &:hover {
     background-color: #1c9b5e;
@@ -159,27 +171,25 @@ input[type="radio"]:checked + .profile__label-radio::before {
 .profile__wrapper-field {
   display: flex;
   flex-direction: column;
-  max-width: 280px;
+  margin-bottom: 27px;
 }
 
 .profile__group {
+  position: relative;
   border: none;
   margin: 0;
-  padding: 0;
   margin-bottom: 40px;
   display : block;
 }
 
 .profile__button-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin-bottom: 60px;
 }
 
 .profile__hint {
+  display: block;
   font-size: 14px;
+  text-align: center;
   line-height: 30px;
   font-weight: 400;
   color: #283645;
@@ -188,6 +198,21 @@ input[type="radio"]:checked + .profile__label-radio::before {
 
 .profile__hint-icon {
   color: #d22856;
+}
+
+.profile__group--radio,
+.profile__group--checkbox {
+  background-color: #f2f2f2;
+}
+
+.profile__group--checkbox {
+  padding-bottom: 40px;
+  padding-top: 110px;
+}
+
+.profile__group--radio {
+  padding-top: 110px;
+  padding-bottom: 40px;
 }
 
 @media(min-width: $tablet-width) {
@@ -205,13 +230,29 @@ input[type="radio"]:checked + .profile__label-radio::before {
     flex-direction: column;
   }
 
-.profile__group--radio,
-.profile__group--checkbox {
-  background-color: #ffffff;
-}
+  .profile__group--radio,
+  .profile__group--checkbox {
+    background-color: #ffffff;
+  }
 
   .profile__group {
     margin-bottom: 60px;
+
+    &--radio {
+      padding: 50px 0 55px 55px;
+    }
+
+    &--contact {
+      padding: 45px 55px 30px;
+    }
+
+    &--checkbox {
+      padding: 45px 0 45px 55px;
+    }
+
+    &--textarea {
+      padding: 45px 55px 50px;
+    }
   }
 
   .profile__group:not(:first-child) {
@@ -233,28 +274,76 @@ input[type="radio"]:checked + .profile__label-radio::before {
   }
 
   .profile__legend {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     background-color: #ffffff;
     max-width: none;
+    width: auto;
+    padding: 0 20px;
+
+    &--contact {
+      display: block;
+    }
   }
 
   .profile__wrapper-field {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
-    max-width: 625px;
+
+    &--contact {
+      flex-direction: column-reverse;
+      position: relative;
+    }
   }
 
   .profile__label {
     margin: 0 19px 0 0;
+
+    &--contact-phone::before {
+      background: url("../images/svg/icon-phone.svg") no-repeat center;
+    }
+
+    &--contact-mail::before {
+      background: url("../images/svg/icon-mail.svg") no-repeat center;
+    }
+
+
+    &--contact {
+      margin: 0 0 20px 20px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        width: 62px;
+        height: 63px;
+        background-color: #e5e5e5;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .profile__label--contact-mail {
+    margin-bottom: 0;
   }
 
   .profile__field {
     width: 100%;
     padding: 15px 0 15px 22px;
+  }
+
+  .profile__button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .profile__button {
+    margin: 0;
+    padding: 20px 55px;
   }
 }
 
@@ -262,4 +351,33 @@ input[type="radio"]:checked + .profile__label-radio::before {
   .profile__title {
     max-width: 755px;
   }
+
+  .profile__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .profile__group--initial,
+  .profile__group--radio {
+    width: 436px;
+  }
+
+  .profile__group--checkbox,
+  .profile__group--contact,
+  .profile__group--textarea {
+    width: 100%;
+  }
+
+  .profile__group--initial {
+    margin-right: auto;
+  }
+
+  .profile__wrapper-field--initial:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .profile__wrapper-field--contact {
+    margin: 0;
+  }
+  
 }

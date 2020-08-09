@@ -380,4 +380,18 @@ input[type="radio"]:checked + .profile__label-radio::before {
     margin: 0;
   }
   
+  .profile__group-wrapper-contact {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .profile__wrapper-field {
+    width: 375px;
+
+    
+    &:nth-child(1) {
+      margin-right: auto;
+    }
+  }
+  
 }

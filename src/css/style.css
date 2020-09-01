@@ -1159,10 +1159,10 @@ input[type="radio"]:checked + .profile__label-radio::before {
 .profile__item:not(:last-child) {
   margin-bottom: 40px; }
 
-.profile__input-checkbox + label {
+.profile__label-checkbox {
   position: relative;
   padding-left: 70px; }
-  .profile__input-checkbox + label::before {
+  .profile__label-checkbox::before {
     content: "";
     position: absolute;
     left: 0;
@@ -1340,8 +1340,9 @@ input[type="radio"]:checked + .profile__label-radio::before {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .profile__button {
     margin: 0;
     padding: 20px 55px; } }
@@ -1379,7 +1380,51 @@ input[type="radio"]:checked + .profile__label-radio::before {
   .profile__wrapper-field {
     width: 375px; }
     .profile__wrapper-field:nth-child(1) {
-      margin-right: auto; } }
+      margin-right: auto; }
+  .profile__group--checkbox {
+    padding: 50px 55px 53px 58px; }
+  .profile__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline; }
+  .profile__item--checkbox {
+    width: 33.333%; }
+  .profile__item--order:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; }
+  .profile__item--order:nth-child(2) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4; }
+  .profile__item--order:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .profile__item--order:nth-child(4) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5; }
+  .profile__item--order:nth-child(5) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; }
+  .profile__item--order:nth-child(6) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6; }
+  .profile__label-checkbox {
+    padding-left: 58px; }
+  .profile__group--textarea {
+    padding: 42px 55px; } }
 
 .photo {
   padding: 55px 0 50px; }

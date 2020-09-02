@@ -1365,7 +1365,8 @@ input[type="radio"]:checked + .profile__label-radio::before {
   .profile__group--textarea {
     width: 100%; }
   .profile__group--initial {
-    margin-right: auto; }
+    margin-right: auto;
+    padding: 10px 0 0 0; }
   .profile__wrapper-field--initial:not(:last-child) {
     margin-bottom: 50px; }
   .profile__wrapper-field--contact {
@@ -1378,9 +1379,14 @@ input[type="radio"]:checked + .profile__label-radio::before {
         -ms-flex-align: baseline;
             align-items: baseline; }
   .profile__wrapper-field {
-    width: 375px; }
+    width: 375px;
+    margin-bottom: 0; }
+    .profile__wrapper-field--initial:not(:last-child) {
+      margin: 0 0 55px 0; }
     .profile__wrapper-field:nth-child(1) {
       margin-right: auto; }
+    .profile__wrapper-field--initial {
+      width: 100%; }
   .profile__group--checkbox {
     padding: 50px 55px 53px 58px; }
   .profile__list {
@@ -1423,8 +1429,12 @@ input[type="radio"]:checked + .profile__label-radio::before {
             order: 6; }
   .profile__label-checkbox {
     padding-left: 58px; }
+  .profile__field--contact {
+    margin-bottom: 19px; }
   .profile__group--textarea {
-    padding: 42px 55px; } }
+    padding: 42px 55px; }
+  .profile__button-wrapper {
+    width: 100%; } }
 
 .photo {
   padding: 55px 0 50px; }

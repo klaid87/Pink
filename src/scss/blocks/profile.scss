@@ -370,6 +370,7 @@ input[type="radio"]:checked + .profile__label-radio::before {
 
   .profile__group--initial {
     margin-right: auto;
+    padding: 10px 0 0 0;
   }
 
   .profile__wrapper-field--initial:not(:last-child) {
@@ -387,10 +388,18 @@ input[type="radio"]:checked + .profile__label-radio::before {
 
   .profile__wrapper-field {
     width: 375px;
+    margin-bottom: 0;
 
+    &--initial:not(:last-child) {
+      margin: 0 0 55px 0;
+    }
     
     &:nth-child(1) {
       margin-right: auto;
+    }
+
+    &--initial {
+      width: 100%;
     }
   }
 
@@ -437,7 +446,15 @@ input[type="radio"]:checked + .profile__label-radio::before {
     padding-left: 58px;
   }
 
+  .profile__field--contact {
+    margin-bottom: 19px;
+  }
+
   .profile__group--textarea {
     padding: 42px 55px;
+  }
+
+  .profile__button-wrapper {
+    width: 100%;
   }
 }

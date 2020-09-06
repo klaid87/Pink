@@ -12,6 +12,14 @@
   margin-bottom: 55px;
 }
 
+.photo__image {
+  width: 100%;
+}
+
+.photo__item {
+  margin-bottom: 20px;
+}
+
 .photo__quote {
   background-color: #f2f2f2;
   margin: 0;
@@ -38,6 +46,18 @@
   font-weight: 400;
   color: #283645;
   max-width: 243px;
+}
+
+.photo__like-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.photo__button-like {
+  width: 12px;
+  height: 13px;
+  background: url("/images/svg/icon-heart.svg") no-repeat center;
+  margin-right: 18px;
 }
 
 .photo__like {

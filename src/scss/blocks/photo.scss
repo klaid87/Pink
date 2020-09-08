@@ -46,6 +46,7 @@
   font-weight: 400;
   color: #283645;
   max-width: 243px;
+  margin-bottom: auto;
 }
 
 .photo__like-wrapper {
@@ -56,7 +57,7 @@
 .photo__button-like {
   width: 12px;
   height: 13px;
-  background: url("/images/svg/icon-heart.svg") no-repeat center;
+  background: url("../images/svg/icon-heart.svg") no-repeat center;
   margin-right: 18px;
 }
 
@@ -66,4 +67,38 @@
   font-weight: 400;
   color: #d22856;
   text-transform: uppercase;
+}
+
+@media(min-width: $tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo__item {
+    width: 280px;
+    margin: 10px 10px;
+
+    &--main {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  .photo__quote {
+    display: flex;
+    flex-direction: column;
+    min-height: 155px;
+  }
+
+  .photo__like-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .photo__button-like {
+    margin: 0;
+  }
 }

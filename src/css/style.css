@@ -1480,7 +1480,8 @@ input[type="radio"]:checked + .profile__label-radio::before {
   line-height: 24px;
   font-weight: 400;
   color: #283645;
-  max-width: 243px; }
+  max-width: 243px;
+  margin-bottom: auto; }
 
 .photo__like-wrapper {
   display: -webkit-box;
@@ -1493,7 +1494,7 @@ input[type="radio"]:checked + .profile__label-radio::before {
 .photo__button-like {
   width: 12px;
   height: 13px;
-  background: url("/images/svg/icon-heart.svg") no-repeat center;
+  background: url("../images/svg/icon-heart.svg") no-repeat center;
   margin-right: 18px; }
 
 .photo__like {
@@ -1502,6 +1503,45 @@ input[type="radio"]:checked + .profile__label-radio::before {
   font-weight: 400;
   color: #d22856;
   text-transform: uppercase; }
+
+@media (min-width: 660px) {
+  .photo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .photo__item {
+    width: 280px;
+    margin: 10px 10px; }
+    .photo__item--main {
+      width: 100%;
+      margin: 0 0 10px 0; }
+  .photo__quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 155px; }
+  .photo__like-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .photo__button-like {
+    margin: 0; } }
 
 .price__table-wrapper {
   overflow: hidden; }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Open-Sans";
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
@@ -541,15 +542,27 @@ img {
 
 @media (min-width: 660px) {
   .greeting {
+    background-color: #222e3b;
+    background: url("../images/background/bg-back-tablet@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 73px; }
     .greeting--form {
       padding: 190px 0 70px 0; }
+    .greeting--photo {
+      padding: 190px 0 145px 0; }
   .greeting__heading {
     font-size: 50px;
     max-width: 480px; } }
 
 @media (min-width: 960px) {
   .greeting {
+    background-color: #222e3b;
+    background: url("../images/background/bg-back-desktop@1x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 100px; }
     .greeting--form {
       padding: 180px 0 100px 0; }
@@ -1457,6 +1470,23 @@ input[type="radio"]:checked + .profile__label-radio::before {
 
 .photo__item {
   margin-bottom: 20px; }
+  .photo__item--main {
+    position: relative; }
+  .photo__item--main::before {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 35px;
+    background-color: #d22856;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 6px 0; }
 
 .photo__quote {
   background-color: #f2f2f2;
@@ -1505,6 +1535,11 @@ input[type="radio"]:checked + .profile__label-radio::before {
   text-transform: uppercase; }
 
 @media (min-width: 660px) {
+  .photo {
+    padding: 100px 0 80px 0; }
+  .photo__agitation {
+    font-size: 18px;
+    max-width: 440px; }
   .photo__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1519,7 +1554,23 @@ input[type="radio"]:checked + .profile__label-radio::before {
     margin: 10px 10px; }
     .photo__item--main {
       width: 100%;
-      margin: 0 0 10px 0; }
+      margin: 0 0 10px 0;
+      position: relative; }
+    .photo__item--main::before {
+      content: "панорама дня";
+      position: absolute;
+      top: 55px;
+      right: 20px;
+      width: 140px;
+      height: 35px;
+      background-color: #d22856;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 6px 0; }
   .photo__quote {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1854,8 +1905,24 @@ input[type="radio"]:checked + .profile__label-radio::before {
   min-height: 219px;
   background: url("../images/pictures/location/bg-map-mobile@1x.jpg");
   background-size: cover;
-  background-position: 0 -200px;
+  background-position: center;
   background-repeat: no-repeat; }
+
+@media (min-width: 660px) {
+  .location {
+    min-height: 219px;
+    background: url("../images/pictures/location/bg-map-tablet@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; } }
+
+@media (min-width: 960px) {
+  .location {
+    min-height: 219px;
+    background: url("../images/pictures/location/bg-map-desktop@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; } }
 
 .social__list {
   display: -webkit-box;

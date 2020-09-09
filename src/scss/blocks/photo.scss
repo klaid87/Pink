@@ -18,6 +18,27 @@
 
 .photo__item {
   margin-bottom: 20px;
+
+  &--main {
+    position: relative;
+  }
+
+  &--main::before {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 35px;
+    background-color: #d22856;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 6px 0;
+  }
 }
 
 .photo__quote {
@@ -70,6 +91,15 @@
 }
 
 @media(min-width: $tablet-width) {
+  .photo {
+    padding: 100px 0 80px 0;
+  }
+
+  .photo__agitation {
+    font-size: 18px;
+    max-width: 440px;
+  }
+
   .photo__list {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +113,24 @@
     &--main {
       width: 100%;
       margin: 0 0 10px 0;
+      position: relative;
+    }
+  
+    &--main::before {
+      content: "панорама дня";
+      position: absolute;
+      top: 55px;
+      right: 20px;
+      width: 140px;
+      height: 35px;
+      background-color: #d22856;
+      text-transform: uppercase;
+      color: #ffffff;
+      text-align: center;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      padding: 6px 0;
     }
   }
 

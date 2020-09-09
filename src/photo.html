@@ -67,7 +67,7 @@
         <nav class="page-header__navigation navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--active link" href="#">Главная</a>
+              <a class="navigation__link navigation__link--active link" href="index.html">Главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link link" href="photo.html">Фотографии</a>
@@ -91,18 +91,20 @@
     </section>
 
     <section class="photo">
-      <h2 class="visually-hidden">Фотографии пользователей сделанные с помощью приложения Pink</h2>
-      <p class="photo__agitation text">
-        Взгляните на фотографии, которые выкладывают пользователи!
-        Видите, как не хватает ваших?
-      </p>
-      <ul class="photo__list list">
-        <li class="photo__item photo__item--main">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/panorama-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <div class="container">
+      <div class="container">
+        <h2 class="visually-hidden">Фотографии пользователей сделанные с помощью приложения Pink</h2>
+        <p class="photo__agitation text">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
+        <ul class="photo__list list">
+          <li class="photo__item photo__item--main">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/panorama-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/panorama-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/panorama-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
             <blockquote class="photo__quote">
               <div class="photo__post-wrapper">
                 <cite class="photo__autor">Анна</cite>
@@ -117,115 +119,127 @@
                 <span class="photo__like">Нравится: 215</span>
               </div>
             </blockquote>
-          </div>
-        </li>
-        <li class="photo__item">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/photo-1-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <blockquote class="photo__quote">
-            <div class="photo__post-wrapper">
-              <cite class="photo__autor">Левон</cite>
-              <time class="photo__time" datetime="2020-05-18T12:10">(5 часов назад)</time>
-            </div>
-            <p class="photo__text-comment text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <div class="photo__like-wrapper">
-              <button class="photo__button-like button" type="button"></button>
-              <span class="photo__like">Нравится: 356</span>
-            </div>
-          </blockquote>
-        </li>
-        <li class="photo__item">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/photo-2-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <blockquote class="photo__quote">
-            <div class="photo__post-wrapper">
-              <cite class="photo__autor">Антон</cite>
-              <time class="photo__time" datetime="2020-05-18T12:10">(12 часов назад)</time>
-            </div>
-            <p class="photo__text-comment text">Соседи будут рады!</p>
-            <div class="photo__like-wrapper">
-              <button class="photo__button-like button" type="button"></button>
-              <span class="photo__like">Нравится: 666</span>
-            </div>
-          </blockquote>
-        </li>
-        <li class="photo__item">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/photo-3-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <blockquote class="photo__quote">
-            <div class="photo__post-wrapper">
-              <cite class="photo__autor">Борис</cite>
-              <time class="photo__time" datetime="2020-05-18T12:10">(20 часов назад)</time>
-            </div>
-            <p class="photo__text-comment text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <div class="photo__like-wrapper">
-              <button class="photo__button-like button" type="button"></button>
-              <span class="photo__like">Нравится: 215</span>
-            </div>
-          </blockquote>
-        </li>
-        <li class="photo__item">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/photo-4-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <blockquote class="photo__quote">
-            <div class="photo__post-wrapper">
-              <cite class="photo__autor">Сергей</cite>
-              <time class="photo__time" datetime="2020-05-18T12:10">(25 часов назад)</time>
-            </div>
-            <p class="photo__text-comment text">Самая кубанская в мире!</p>
-            <div class="photo__like-wrapper">
-              <button class="photo__button-like button" type="button"></button>
-              <span class="photo__like">Нравится: 4</span>
-            </div>
-          </blockquote>
-        </li>
-        <li class="photo__item">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/photo-5-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <blockquote class="photo__quote">
-            <div class="photo__post-wrapper">
-              <cite class="photo__autor">Максим</cite>
-              <time class="photo__time" datetime="2020-05-18T12:10">(40 часов назад)</time>
-            </div>
-            <p class="photo__text-comment text">Где снег-то?!</p>
-            <div class="photo__like-wrapper">
-              <button class="photo__button-like button" type="button"></button>
-              <span class="photo__like">Нравится: 150</span>
-            </div>
-          </blockquote>
-        </li>
-        <li class="photo__item">
-          <picture class="photo__image-wrapper pictures">
-            <img class="photo__image" src="images/pictures/photo/photo-6-mobile@1x.jpg"
-              alt="Фотография пользователя сделанная с помощью приложения Pink">
-          </picture>
-          <blockquote class="photo__quote">
-            <div class="photo__post-wrapper">
-              <cite class="photo__autor">Надежда</cite>
-              <time class="photo__time" datetime="2020-05-18T12:10">(45 часов назад)</time>
-            </div>
-            <p class="photo__text-comment text">Всем GM и взаимные лайки!</p>
-            <div class="photo__like-wrapper">
-              <button class="photo__button-like button" type="button"></button>
-              <span class="photo__like">Нравится: 2560</span>
-            </div>
-          </blockquote>
-        </li>
-      </ul>
-      <p class="photo__agitation text">
-        Затмите их всех!<br>
-        Выкладывайте все, что накопилось в телефоне!
-      </p>
+          </li>
+          <li class="photo__item">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-1-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-1-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/photo-1-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
+            <blockquote class="photo__quote">
+              <div class="photo__post-wrapper">
+                <cite class="photo__autor">Левон</cite>
+                <time class="photo__time" datetime="2020-05-18T12:10">(5 часов назад)</time>
+              </div>
+              <p class="photo__text-comment text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo__like-wrapper">
+                <button class="photo__button-like button" type="button"></button>
+                <span class="photo__like">Нравится: 356</span>
+              </div>
+            </blockquote>
+          </li>
+          <li class="photo__item">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-2-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-2-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/photo-2-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
+            <blockquote class="photo__quote">
+              <div class="photo__post-wrapper">
+                <cite class="photo__autor">Антон</cite>
+                <time class="photo__time" datetime="2020-05-18T12:10">(12 часов назад)</time>
+              </div>
+              <p class="photo__text-comment text">Соседи будут рады!</p>
+              <div class="photo__like-wrapper">
+                <button class="photo__button-like button" type="button"></button>
+                <span class="photo__like">Нравится: 666</span>
+              </div>
+            </blockquote>
+          </li>
+          <li class="photo__item">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-3-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-3-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/photo-3-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
+            <blockquote class="photo__quote">
+              <div class="photo__post-wrapper">
+                <cite class="photo__autor">Борис</cite>
+                <time class="photo__time" datetime="2020-05-18T12:10">(20 часов назад)</time>
+              </div>
+              <p class="photo__text-comment text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo__like-wrapper">
+                <button class="photo__button-like button" type="button"></button>
+                <span class="photo__like">Нравится: 215</span>
+              </div>
+            </blockquote>
+          </li>
+          <li class="photo__item">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-4-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-4-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/photo-4-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
+            <blockquote class="photo__quote">
+              <div class="photo__post-wrapper">
+                <cite class="photo__autor">Сергей</cite>
+                <time class="photo__time" datetime="2020-05-18T12:10">(25 часов назад)</time>
+              </div>
+              <p class="photo__text-comment text">Самая кубанская в мире!</p>
+              <div class="photo__like-wrapper">
+                <button class="photo__button-like button" type="button"></button>
+                <span class="photo__like">Нравится: 4</span>
+              </div>
+            </blockquote>
+          </li>
+          <li class="photo__item">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-5-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-5-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/photo-5-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
+            <blockquote class="photo__quote">
+              <div class="photo__post-wrapper">
+                <cite class="photo__autor">Максим</cite>
+                <time class="photo__time" datetime="2020-05-18T12:10">(40 часов назад)</time>
+              </div>
+              <p class="photo__text-comment text">Где снег-то?!</p>
+              <div class="photo__like-wrapper">
+                <button class="photo__button-like button" type="button"></button>
+                <span class="photo__like">Нравится: 150</span>
+              </div>
+            </blockquote>
+          </li>
+          <li class="photo__item">
+            <picture class="photo__image-wrapper pictures">
+              <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-6-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-6-tablet@1x.jpg">
+              <img class="photo__image" src="images/pictures/photo/photo-6-mobile@1x.jpg"
+                alt="Фотография пользователя сделанная с помощью приложения Pink">
+            </picture>
+            <blockquote class="photo__quote">
+              <div class="photo__post-wrapper">
+                <cite class="photo__autor">Надежда</cite>
+                <time class="photo__time" datetime="2020-05-18T12:10">(45 часов назад)</time>
+              </div>
+              <p class="photo__text-comment text">Всем GM и взаимные лайки!</p>
+              <div class="photo__like-wrapper">
+                <button class="photo__button-like button" type="button"></button>
+                <span class="photo__like">Нравится: 2560</span>
+              </div>
+            </blockquote>
+          </li>
+        </ul>
+        <p class="photo__agitation text">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </p>
+      </div>
     </section>
 
     <section class="filter">

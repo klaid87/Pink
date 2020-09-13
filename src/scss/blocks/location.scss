@@ -1,9 +1,21 @@
 .location {
+  position: relative;
   min-height: 219px;
   background: url("../images/pictures/location/bg-map-mobile@1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    background: url("../../images/svg/icon-map-marker.svg") no-repeat center;
+  }
 }
 
 @media(min-width: $tablet-width) {

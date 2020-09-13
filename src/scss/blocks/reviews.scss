@@ -58,3 +58,20 @@
     color: #283645;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+      content: "";
+      width: 79px;
+      height: 63px;
+      background: url("../../images/svg/icon-quotes.svg") no-repeat center;
+      margin-bottom: 55px;
+    }
+  }
+}

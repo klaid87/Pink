@@ -1,5 +1,9 @@
 .page-footer {
-  padding-bottom: 40px;
+  padding: 40px 0;
+
+  &--index-mob {
+    display: none;
+  }
 }
 
 .page-footer__wrapper {
@@ -69,6 +73,10 @@
 @media(min-width: $tablet-width) {
   .page-footer {
     padding: 35px 0 50px 0;
+
+    &--index-mob {
+      display: block;
+    }
   }
 
   .page-footer__wrapper {

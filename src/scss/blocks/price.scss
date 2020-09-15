@@ -1,5 +1,4 @@
 .price {
- 
 }
 
 .price__table-wrapper {
@@ -32,7 +31,7 @@
   color: #283645;
   text-transform: uppercase;
   padding: 25px 15px 25px 23px;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e5e5e5;
   text-align: left;
 }
 
@@ -106,6 +105,8 @@
   .price__table-wrapper {
     display: flex;
     justify-content: center;
+    padding-top: 85px;
+    background: #f2f2f2 url("../../images/svg/bg-triangle-white.svg") no-repeat 0 0;
   }
 
   .price__table {
@@ -121,11 +122,14 @@
   }
 
   .price__title {
+    width: 154px;
     padding: 20px 35px;
   }
 
   .price__cell {
-    padding: 15px 20px 15px 15px;
+    width: 154px;
+    text-align: center;
+    padding: 20px 15px;
   }
 
   .price__title-package {

@@ -62,11 +62,13 @@
     </symbol>
     <symbol id="filter-editor-fill" viewBox="0 0 48 48">
       <path fill="none" d="M0,0h48v48H0V0z" />
-      <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+      <path
+        d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
       <rect y="40" width="48" height="3" />
     </symbol>
     <symbol id="filter-editor-contrast" viewBox="-35.422 -7.96 31.92 31.92">
-      <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+      <path
+        d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
       <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
     </symbol>
   </svg>
@@ -261,31 +263,78 @@
         <div class="filter__body">
           <h2 class="visually-hidden">Фильтр для обработки фотографий</h2>
           <picture class="filter__image-wrapper pictures">
+            <source media="(min-width: 960px)" srcset="images/pictures/photo/photo-7-desktop@1x.jpg">
+            <source media="(min-width: 660px)" srcset="images/pictures/photo/photo-7-tablet@1x.jpg">
             <img class="filter__image" src="images/pictures/photo/photo-7-mobile@1x.jpg"
               alt="Фотография пользователя для обработки с помощью фильтра">
           </picture>
-          <ul class="filter__list list">
-            <li class="filter__item">
-              <svg class="filter__icon filter__icon--corp">
-                <use xlink:href="#filtor-editor-corp"></use>
-              </svg>
-              <input class="filter__input" type="range" min="0" max="20" step="1" value="0">
-            </li>
-            <li class="filter__item">
-              <svg class="filter__icon filter__icon--fill">
-                <use xlink:href="#filter-editor-fill"></use>
-              </svg>
-              <input class="filter__input" type="range" min="0" max="20" step="1" value="0">
-            </li>
-            <li class="filter__item">
-              <svg class="filter__icon filter__icon--contrast">
-                <use xlink:href="#filter-editor-contrast"></use>
-              </svg>
-              <input class="filter__input" type="range" min="0" max="20" step="1" value="0">
-            </li>
-          </ul>
-          <button class="filter__button filter__button--post button" type="submit">Запостить</button>
-          <button class="filter__button filter__button--cancel button" type="reset">Отмена</button>
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+            <ul class="filter__list-mobile list">
+              <li class="filter__item-mobile">
+                <input id="corp-filter" class="visually-hidden" type="radio" name="radio" value="corp" checked>
+                <label class="filter__label-mobile" for="corp-filter">
+                  <svg class="filter__icon filter__icon--corp">
+                    <use xlink:href="#filtor-editor-corp"></use>
+                  </svg>
+                </label>
+                <div class="filter__input-wrapper">
+                  <input class="filter__input-range" type="range">
+                </div>
+              <li class="filter__item-mobile">
+                <input id="fill-filter" class="visually-hidden" type="radio" name="radio" value="fill">
+                <label class="filter__label-mobile" for="fill-filter">
+                  <svg class="filter__icon filter__icon--fill">
+                    <use xlink:href="#filter-editor-fill"></use>
+                  </svg>
+                </label>
+                <div class="filter__input-wrapper">
+                  <input class="filter__input-range" type="range">
+                </div>
+              </li>
+              <li class="filter__item-mobile">
+                <input id="contrast-filter" class="visually-hidden" type="radio" name="radio" value="contrast">
+                <label class="filter__label-mobile" for="contrast-filter">
+                  <svg class="filter__icon filter__icon--contrast">
+                    <use xlink:href="#filter-editor-contrast"></use>
+                  </svg>
+                </label>
+                <div class="filter__input-wrapper">
+                  <input class="filter__input-range" type="range">
+                </div>
+              </li>
+            </ul>
+            <ul class="filter__list list">
+              <li class="filter__item">
+                <div class="filter__icon-container">
+                  <svg class="filter__icon filter__icon--corp">
+                    <use xlink:href="#filtor-editor-corp"></use>
+                  </svg>
+                </div>
+                <input class="filter__input filter__input--hide" type="range" min="0" max="270" step="1" value="0">
+              </li>
+              <li class="filter__item">
+                <div class="filter__icon-container">
+                  <svg class="filter__icon filter__icon--fill">
+                    <use xlink:href="#filter-editor-fill"></use>
+                  </svg>
+                </div>
+                <input class="filter__input filter__input--hide" type="range" min="0" max="20" step="1" value="0">
+              </li>
+              <li class="filter__item">
+                <div class="filter__icon-container">
+                  <svg class="filter__icon filter__icon--contrast">
+                    <use xlink:href="#filter-editor-contrast"></use>
+                  </svg>
+                </div>
+                <input class="filter__input filter__input--hide" type="range" min="0" max="20" step="1" value="0">
+              </li>
+              <li class="filter__item filter__item--hide">
+                <input class="filter__input" type="range" min="0" max="20" step="1" value="0">
+              </li>
+            </ul>
+            <button class="filter__button filter__button--post button" type="submit">Запостить</button>
+            <button class="filter__button filter__button--cancel button" type="reset">Отмена</button>
+          </form>
         </div>
       </div>
     </section>

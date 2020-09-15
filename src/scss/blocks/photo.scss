@@ -1,227 +1,107 @@
 .photo {
   padding: 55px 0 50px;
-}
 
-.photo__agitation {
-  line-height: 30px;
-  font-weight: 400;
-  color: #283645;
-  max-width: 245px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 55px;
-}
-
-.photo__top {
-  position: relative;
-}
-
-.photo__label {
-  position: absolute;
-  display: block;
-  width: 140px;
-  height: 35px;
-  background-color: #d22856;
-  font-size: 12px;
-  line-height: 24px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  top: 0;
-  right: 20px;
-  padding: 6px 0;
-}
-
-.photo__image {
-  width: 100%;
-}
-
-.photo__item {
-  margin-bottom: 20px;
-}
-
-.photo__quote {
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 25px 23px 25px 18px;
-
-  &--top {
-    width: 280px;
+  &__agitation {
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    max-width: 245px;
     margin: 0 auto;
+    text-align: center;
+    margin-bottom: 55px;
   }
-}
-
-.photo__autor {
-  line-height: 24px;
-  font-weight: 700;
-  color: #283645;
-  font-style: normal;
-}
-
-.photo__time {
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #283645;
-  text-transform: uppercase;
-}
-
-.photo__text-comment {
-  line-height: 24px;
-  font-weight: 400;
-  color: #283645;
-  max-width: 243px;
-  margin-bottom: auto;
-}
-
-.photo__like-wrapper {
-  display: flex;
-  align-items: center;
-}
-
-.photo__button-like {
-  width: 12px;
-  height: 13px;
-  background: url("../images/svg/icon-heart.svg") no-repeat center;
-  margin-right: 18px;
-}
-
-.photo__like {
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #d22856;
-  text-transform: uppercase;
-}
-
-.filter__body {
-  background-color: #f2f2f2;
-  margin: 0 -20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0 40px 0;
-}
-
-.filter__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 20px 0;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-//-----------------Сброс базовых стилей для input type="range"-----------------------//
-
-input[type=range] {
-  -webkit-appearance: none; /* Скрывает слайдер, чтобы можно было создать свой */
-  width: 100%; /* Указание параметра ширины требуется для Firefox. */
-}
- 
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-}
- 
-input[type=range]:focus {
-  outline: none; /* Убирает голубую границу у элемента. Хотя, возможно, и стоит создавать некоторое оформления для состояния фокуса в целях обеспечения доступности. */
-}
- 
-input[type=range]::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent; /* Скрывает слайдер, чтобы можно было добавить собственные стили. */
-  border-color: transparent;
-  color: transparent;
-}
-
-//-----------------Стили для input type="range" шкала--------------------------------//
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 2px;
-  cursor: pointer;
-  background: #283645;
-}
-
-//-----------------Стили для input type="range" ползунок--------------------------------//
-input[type=range]::-webkit-slider-thumb {
-  position: relative;
-  top: 9px;
-  left: 0;
-  -webkit-appearance: none;
-  border: 2px solid #d22856;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  background: #ffffff;
-  cursor: pointer;
-  margin-top: -14px; /* Вам нужно указать значение для поля в Chrome, но в Firefox и IE это происходит автоматически */
-  &:hover {
-    background: #d22856;
+  
+  &__top {
+    position: relative;
   }
-  &:active {
-    background: #d22856;
+  
+  &__label {
+    position: absolute;
+    display: block;
+    width: 140px;
+    height: 35px;
+    background-color: #d22856;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    right: 20px;
+    padding: 6px 0;
   }
-}
-
-.filter__icon {
-  height: 46px;
-  fill: #b5b9be;
-
-  &--corp {
-    width: 45px;
+  
+  &__image {
+    width: 100%;
   }
-
-  &--fill {
-    width: 48px;
+  
+  &__item {
+    margin-bottom: 20px;
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-
-  &--contrast {
-    width: 32px;
+  
+  &__quote {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 25px 23px 25px 18px;
+  
+    &--top {
+      width: calc(100% - 40px);
+      margin: 0 auto 20px;
+    }
   }
-}
-
-.filter__button {
-  padding: 15px 90px;
-  border: 2px solid #f2f2f2;
-  border-radius: 30px;
-  font-size: 18px;
-  line-height: 18px;
-  outline: none;
-  width: 281px;
-
-  &--post {
-    border-color: #d22856;
+  
+  &__autor {
+    line-height: 24px;
+    font-weight: 700;
+    color: #283645;
+    font-style: normal;
+  }
+  
+  &__time {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #283645;
+    text-transform: uppercase;
+  }
+  
+  &__text-comment {
+    line-height: 24px;
+    font-weight: 400;
+    color: #283645;
+    max-width: 243px;
+    margin-bottom: auto;
+  }
+  
+  &__like-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__button-like {
+    width: 12px;
+    height: 13px;
+    background: url("../images/svg/icon-heart.svg") no-repeat center;
+    margin-right: 18px;
+  }
+  
+  &__like {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 400;
     color: #d22856;
-    margin-bottom: 10px;
-
-    &:hover {
-      border-color: #d22856;
-      color: #ffffff;
-      background-color: #d22856;
-    }
-
-    &:active {
-      color: #e08195;
-    }
-  }
-
-  &--cancel {
-    color: #dddfe0;
-    border-color: #dddfe0;
-
-    &:hover {
-      border-color: #b5b9be;
-      color: #b5b9be;
-    }
-
-    &:active {
-      background-color: #b5b9be;
-      color: #cdd0d3;
-    }
+    text-transform: uppercase;
   }
 }
+
+
+
+
+
 
 @media(min-width: $tablet-width) {
   .photo {
@@ -232,10 +112,11 @@ input[type=range]::-webkit-slider-thumb {
     font-size: 18px;
     max-width: 440px;
   }
-
+ 
   .photo__quote {
+
     &--top {
-      width: 620px;
+      max-width: 620px;
     }
   }
 
@@ -288,24 +169,24 @@ input[type=range]::-webkit-slider-thumb {
   .photo__button-like {
     margin: 0;
   }
+
+  
 }
 
 @media(min-width: $desktop-width) {
   .photo__list {
     justify-content: space-between;
   }
+  
+  .photo__quote {
+    
+    &--top {
+      max-width: 940px;
+    }
+  }
 
   .photo__item {
     margin: 10px 0;
   }
 
-  .filter__icon-corp {
-    width: 50px;
-    height: 50px;
-    fill: #283645;
-    
-    &:hover {
-      fill: #d22856;
-    }
-  }
 }

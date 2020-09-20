@@ -94,3 +94,9 @@
     margin-bottom: 0;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .page-footer {
+    padding: 90px 0 50px 0;
+  }
+}

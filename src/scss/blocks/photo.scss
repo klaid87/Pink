@@ -1,5 +1,5 @@
 .photo {
-  padding: 55px 0 50px;
+  // TODO
 
   &__agitation {
     line-height: 30px;
@@ -8,7 +8,6 @@
     max-width: 245px;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 55px;
   }
   
   &__top {
@@ -105,75 +104,122 @@
 
 @media(min-width: $tablet-width) {
   .photo {
-    padding: 100px 0 80px 0;
-  }
+    // padding: 100px 0 80px 0;
 
-  .photo__agitation {
-    font-size: 18px;
-    max-width: 440px;
-  }
- 
-  .photo__quote {
+    &__agitation {
+      font-size: 18px;
+      max-width: 440px;
+      padding: 95px 0 80px;
 
-    &--top {
-      max-width: 620px;
+      &--bottom {
+        padding: 70px 0;
+      }
     }
-  }
+   
+    &__quote {
+      display: flex;
+      flex-direction: column;
+      min-height: 155px;
+  
+      &--top {
+        max-width: 620px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
 
-  .photo__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    &__post-wrapper {
 
-  .photo__item {
-    width: 300px;
-    margin: 10px 10px;
+      &--top {
+        order: 1;
+        margin-right: auto;
+      }
+    }
 
-    &--main {
-      width: 100%;
-      margin: 0 0 10px 0;
-      position: relative;
+    &__text-comment {
+
+      &--top {
+        max-width: 510px;
+        order: 3;
+      }
+    }
+
+    &__label {
+      top: 55px;
     }
   
-    &--main::before {
-      content: "панорама дня";
-      position: absolute;
-      top: 55px;
-      right: 20px;
-      width: 140px;
-      height: 35px;
-      background-color: #d22856;
-      text-transform: uppercase;
-      color: #ffffff;
-      text-align: center;
-      font-size: 12px;
-      line-height: 24px;
-      font-weight: 700;
-      padding: 6px 0;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    &__item {
+      width: 300px;
+      margin: 10px 10px;
+  
+      &--main {
+        width: 100%;
+        margin: 0 0 10px 0;
+        position: relative;
+      }
+    
+      &--main::before {
+        content: "панорама дня";
+        position: absolute;
+        top: 55px;
+        right: 20px;
+        width: 140px;
+        height: 35px;
+        background-color: #d22856;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 6px 0;
+      }
+    }
+  
+    &__like-wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      &--top {
+        order: 2;
+      }
+    }
+
+    &__like {
+
+      &--top {
+        margin-right: 15px;
+      }
+    }
+  
+    &__button-like {
+      margin: 0;
     }
   }
 
-  .photo__quote {
-    display: flex;
-    flex-direction: column;
-    min-height: 155px;
-  }
-
-  .photo__like-wrapper {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .photo__button-like {
-    margin: 0;
-  }
+  
 
   
 }
 
 @media(min-width: $desktop-width) {
+  
+  .photo__agitation {
+    max-width: 580px;
+
+    &--bottom {
+      padding: 55px 0 70px 0;
+    }
+  }
+
   .photo__list {
     justify-content: space-between;
   }
@@ -185,8 +231,15 @@
     }
   }
 
+  .photo__text-comment {
+
+    &--top {
+      max-width: 865px;
+    }
+  }
+
   .photo__item {
-    margin: 10px 0;
+    margin: 25px 0;
   }
 
 }

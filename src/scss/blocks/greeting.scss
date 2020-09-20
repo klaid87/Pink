@@ -45,6 +45,10 @@
   .greeting__heading {
     font-size: 50px;
     max-width: 480px;
+
+    &--photo {
+      max-width: 355px;
+    }
   }
 }
 
@@ -60,10 +64,18 @@
     &--form {
       padding: 180px 0 100px 0;
     }
+
+    &--photo {
+      padding-top: 180px;
+    }
   }
 
   .greeting__heading {
     max-width: 748px;
+
+    &--photo {
+      max-width: 355px;
+    }
   }
 }
 

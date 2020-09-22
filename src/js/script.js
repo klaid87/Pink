@@ -15,6 +15,14 @@
   });
 </script> */
 
-let menu = document.querySelector('.page-header');
-let button = document.querySelector('.navigation__button');
+var menu = document.querySelector('.page-header');
+var button = document.querySelector('.navigation__button');
+
+var onMenuButtonClick = function(evt) {
+  evt.preventDefault();
+  button.classList.toggle('navigation__button--opened');
+  menu.classList.toggle('page-header--menu-opened');
+}
+
+button.addEventListener('click', onMenuButtonClick);
 

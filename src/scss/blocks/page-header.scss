@@ -10,6 +10,9 @@
 .page-header--menu-opened {
   padding-bottom: 0;
   background-color: #283645;
+  .navigation__link::after {
+    display: none;
+  }
   .navigation__list {
     display: block;
   }
@@ -18,12 +21,44 @@
 .page-header__logo-link {
   display: inline-block;
   margin-right: auto;
+
+  &:hover {
+    svg {
+      fill: #d22856;
+    }
+  }
+}
+
+.page-header__logo-icon-mobile {
+  width: 77px;
+  height: 23px;
+}
+
+.page-header__logo-icon-tablet {
+  width: 150px;
+  height: 43px;
+  display: none;
+}
+
+.page-header__logo-icon-desktop {
+  width: 150px;
+  height: 43px;
+  display: none;
+  fill: #ffffff;
 }
 
 @media(min-width: $tablet-width) {
- .page-header {
-    padding: 25px 20px 40px;
- }
+  .page-header {
+    padding: 25px 0 40px 0;
+  }
+
+  .page-header__logo-icon-mobile {
+    display: none;
+  }
+
+  .page-header__logo-icon-tablet {
+    display: block;
+  }
 }
 
 @media(min-width: $desktop-width) {
@@ -36,6 +71,14 @@
   .page-header__logo-link {
     margin: 0;
     margin-right: auto;
+  }
+
+  .page-header__logo-icon-tablet {
+    display: none;
+  }
+
+  .page-header__logo-icon-desktop {
+    display: block;
   }
 }
 

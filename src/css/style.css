@@ -622,7 +622,6 @@ img {
   padding: 60px 0 0 0; }
 
 .advantages__wrapper-text {
-  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,8 +680,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f2f2f2;
-  padding-top: 85px; }
+  padding-top: 85px;
+  margin: 0 -20px; }
   .advantages__content-wrapper::before {
     content: "";
     display: block;
@@ -761,7 +760,8 @@ img {
 
 @media (min-width: 960px) {
   .advantages {
-    padding: 80px 0 0 0; }
+    padding: 80px 0 0 0;
+    background-image: linear-gradient(175deg, #ffffff 540px, #f2f2f2 541px); }
   .advantages__text {
     font-size: 50px;
     font-weight: 300;
@@ -771,8 +771,10 @@ img {
     margin-bottom: 0; }
   .advantages__text:nth-child(2) {
     max-width: 440px; }
-  .advantages__content-wrapper::before {
-    display: none; }
+  .advantages__content-wrapper {
+    margin: 0; }
+    .advantages__content-wrapper::before {
+      display: none; }
   .advantages__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -893,6 +895,28 @@ img {
     font-weight: 400;
     text-decoration: underline; } }
 
+@media (min-width: 960px) {
+  .research {
+    background-color: #f2f2f2;
+    padding-bottom: 70px; }
+  .research__content-wrapper::before {
+    background-image: url("../images/pictures/research/timer-desktop.png");
+    width: 298px;
+    height: 345px;
+    margin-right: 68px; }
+  .research__title {
+    line-height: 30px;
+    max-width: 300px;
+    margin-bottom: 20px; }
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 535px;
+    margin-bottom: 40px; }
+  .research__link {
+    font-size: 18px;
+    line-height: 30px; } }
+
 .reviews {
   padding: 50px 0 0 0; }
 
@@ -954,6 +978,8 @@ img {
     color: #283645; } }
 
 @media (min-width: 960px) {
+  .reviews {
+    position: relative; }
   .reviews__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -973,7 +999,15 @@ img {
       width: 79px;
       height: 63px;
       background: url("../images/svg/icon-quotes.svg") no-repeat center;
-      margin-bottom: 55px; } }
+      margin-bottom: 55px; }
+  .reviews__icon {
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    top: 50%;
+    left: 200px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); } }
 
 .contact {
   display: -webkit-box;
@@ -1722,7 +1756,7 @@ input[type="radio"]:checked + .profile__label-radio::before {
     margin: 25px 0; } }
 
 .price {
-  background: #f2f2f2 url("../../images/svg/bg-triangle-white.svg") no-repeat 0 0;
+  background: #f2f2f2 url("../images/svg/bg-triangle-white.svg") no-repeat 0 0;
   background-size: 100% auto;
   padding: 135px 0 0px 0; }
 

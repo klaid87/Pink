@@ -60,6 +60,10 @@
 }
 
 @media(min-width: $desktop-width) {
+  .reviews {
+    position: relative;
+  }
+
   .reviews__item {
     display: flex;
     flex-direction: column;
@@ -73,5 +77,14 @@
       background: url("../images/svg/icon-quotes.svg") no-repeat center;
       margin-bottom: 55px;
     }
+  }
+
+  .reviews__icon{
+    position: absolute;
+    width: 22px;
+    height: 42px;
+    top: 50%;
+    left: 200px;
+    transform: translateY(-50%);
   }
 }

@@ -55,5 +55,38 @@
   font-weight: 400;
   text-decoration: underline;
 }
+}
 
+@media(min-width: $desktop-width) {
+  .research {
+    background-color: #f2f2f2;
+    padding-bottom: 70px;
+  }
+
+  .research__content-wrapper {
+    &::before {
+      background-image: url("../images/pictures/research/timer-desktop.png");
+      width: 298px;
+      height: 345px;
+      margin-right: 68px;
+    }
+  }
+
+  .research__title {
+    line-height: 30px;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .research__text {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 535px;
+    margin-bottom: 40px;
+  }
+
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

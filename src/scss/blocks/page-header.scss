@@ -8,13 +8,24 @@
 }
 
 .page-header--menu-opened {
+  position: relative;
   padding-bottom: 0;
   background-color: #283645;
-  .navigation__link::after {
-    display: none;
+
+  .navigation__link {
+    font-size: 18px;
+
+    &::after {
+      display: none;
+    }
+    
   }
   .navigation__list {
     display: block;
+  }
+
+  .navigation__item {
+    padding: 20px 0;
   }
 }
 

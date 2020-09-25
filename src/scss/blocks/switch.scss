@@ -1,7 +1,10 @@
 .switch {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+
+  &--table {
+    padding: 20px 0;
+  }
 }
 
 .switch__button {
@@ -25,6 +28,12 @@
 
 @media(min-width: $tablet-width) {
   .switch--table {
+    display: none;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .switch {
     display: none;
   }
 }

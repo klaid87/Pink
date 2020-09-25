@@ -36,6 +36,10 @@
   display: none;
 }
 
+.reviews__button {
+  display: none;
+}
+
 @media(min-width: $tablet-width) {
   .reviews__text {
     font-size: 18px;
@@ -61,7 +65,9 @@
 
 @media(min-width: $desktop-width) {
   .reviews {
-    position: relative;
+    .container {
+      position: relative;
+    }
   }
 
   .reviews__item {
@@ -79,12 +85,29 @@
     }
   }
 
-  .reviews__icon{
+  .reviews__button{
+    display: block;
     position: absolute;
     width: 22px;
     height: 42px;
     top: 50%;
-    left: 200px;
     transform: translateY(-50%);
+    outline: none;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  .reviews__icon {
+    fill: #bec2c7;
+
+    &:hover {
+      fill: #7e868f;
+    }
   }
 }

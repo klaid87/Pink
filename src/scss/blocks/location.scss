@@ -1,10 +1,10 @@
 .location {
   position: relative;
   min-height: 219px;
-  background: url("../images/pictures/location/bg-map-mobile@1x.jpg");
+  background:
+  url("../images/svg/bg-triangle-white-footer.svg") no-repeat 100px 100px, 
+  url("../images/pictures/location/bg-map-mobile@1x.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
   &::before {
     content: "";
@@ -18,6 +18,14 @@
   }
 }
 
+// .location__polygon {
+//   position: absolute;
+//   width: 100%;
+//   height: 33px;
+//   top: 0;
+//   left: 0;
+// }
+
 @media(min-width: $tablet-width) {
   .location {
     min-height: 219px;
@@ -25,6 +33,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 400px;
   }
 }
 
@@ -35,5 +44,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 520px;
   }
 }

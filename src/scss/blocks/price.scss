@@ -77,25 +77,23 @@
   background-color: #283645;
   padding: 25px 25px;
   overflow: hidden;
-
-  &--hit {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -60px;
-      background-color: #d22856;
-      height: 30px;
-      width: 200px;
-      transform: rotate(-45deg);
-    }
-  }
 }
 
 .price__title-wrapper {
   display: flex;
   flex-direction: column;
-  overflow: visible;
+}
+
+.price__title-label {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  background-color: #d22856;
+  color: #ffffff;
+  line-height: 30px;
+  top: 10px;
+  left: -25px;
+  transform: rotate(-45deg);
 }
 
 .price__title:nth-child(3) {
@@ -155,6 +153,11 @@
     width: 154px;
     text-align: center;
     padding: 6px 6px;
+  }
+
+  .price__title-label {
+    width: 85px;
+    top: 5px;
   }
 
   .price__title-package {

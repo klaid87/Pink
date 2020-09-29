@@ -34,6 +34,12 @@
 
 .page-footer__logo-link {
   margin-bottom: 35px;
+
+  &:hover {
+    svg {
+      fill: #d22856;
+    }
+  }
 }
 
 .social__list {
@@ -60,6 +66,10 @@
   width: 150px;
   height: 45px;
   fill: #d22856;
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .st0 {
@@ -90,6 +100,10 @@
     margin-bottom: 0;
   }
 
+  .page-footer__logo-icon {
+    fill: #283645;
+  }
+
   .social__list {
     margin-bottom: 0;
   }
@@ -98,5 +112,13 @@
 @media(min-width: $desktop-width) {
   .page-footer {
     padding: 90px 0 50px 0;
+  }
+
+  .page-footer__logo-icon {
+    display: none;
+    
+    &--desktop {
+      display: block;
+    }
   }
 }

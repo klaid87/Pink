@@ -446,12 +446,18 @@ input[type="radio"]:checked + .profile__label-radio::before {
     padding-left: 58px;
   }
 
+  .profile__legend {
+    &--textarea {
+      margin: 0;
+    }
+  }
+
   .profile__field--contact {
     margin-bottom: 19px;
   }
 
   .profile__group--textarea {
-    padding: 42px 55px;
+    padding: 40px 55px;
   }
 
   .profile__button-wrapper {

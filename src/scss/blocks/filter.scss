@@ -203,12 +203,10 @@ input[type="radio"]:checked ~ .filter__input-wrapper {
   display: none;
 }
 
-// input[type="radio"]:not(:checked) + label ~ div {
-//   display: none;
-// }
-
 .filter__label-mobile {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 34px;
   width: 50px;
 }

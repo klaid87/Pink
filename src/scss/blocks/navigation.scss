@@ -1,5 +1,9 @@
-.navigation__list {
+.navigation {
   display: none;
+}
+
+.navigation__list {
+  position: relative;
   margin: 21px -20px 0;
   border-top: 1px solid #000000; 
 }

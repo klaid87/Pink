@@ -7,16 +7,20 @@
   padding: 20px 0;
 }
 
-.page-header--menu-opened {
-  position: relative;
-  padding: 20px 0 0 0;
-  background-color: #283645;
-  
-  .navigation__list {
-    display: block;
+@media(max-width: 959px) {
+  .page-header {
+    
+    &--menu-opened {
+      position: relative;
+      padding: 20px 0 0 0;
+      background-color: #283645;
+      
+      .page-header__navigation {
+        display: block;
+      }
+    }
   }
 }
-
 
 .page-header__logo-link {
   display: inline-block;
@@ -113,6 +117,10 @@
 }
 
 @media(min-width: $desktop-width) {
+  .page-header__navigation {
+    display: block;
+  }
+
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;

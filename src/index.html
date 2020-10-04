@@ -196,34 +196,38 @@
     <section class="greeting">
       <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
       <section class="promo">
-        <picture class="promo__picture picture">
-          <source media="(min-width: 960px)" srcset="images/pictures/promo/iphone-6-desktop.png">
-          <source media="(min-width: 660px)" srcset="images/pictures/promo/iphone-6-tablet.png">
-          <img class="promo__image" src="images/pictures/promo/iphone-6.png"
-            alt="Изображение Iphone-6 c приложением Pink">
-        </picture>
-        <div class="promo__content-wrapper">
-          <h2 class="promo__heading heading">Взгляните на жизнь иначе!</h2>
-          <a class="promo__button button link" href="#">Скачать приложение</a>
-          <ul class="promo__list list">
-            <li class="promo__item">
-              <a class="promo__link promo__link--apple link" href="https://www.apple.com/itunes/">
-                <span class="visually-hidden">apple</span>
-              </a>
-            </li>
-            <li class="promo__item">
-              <a class="promo__link promo__link--android link" href="https://play.google.com/store">
-                <span class="visually-hidden">android</span>
-              </a>
-            </li>
-            <li class="promo__item">
-              <a class="promo__link promo__link--windows link"
-                href="https://www.microsoft.com/ru-ru/download/windowsphone.aspx">
-                <span class="visually-hidden">windows</span>
-              </a>
-            </li>
-          </ul>
-          <p class="promo__subtext">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="container">
+          <div class="promo__body">
+            <picture class="promo__picture picture">
+              <source media="(min-width: 960px)" srcset="images/pictures/promo/iphone-6-desktop.png">
+              <source media="(min-width: 660px)" srcset="images/pictures/promo/iphone-6-tablet.png">
+              <img class="promo__image" src="images/pictures/promo/iphone-6.png"
+                alt="Изображение Iphone-6 c приложением Pink">
+            </picture>
+            <div class="promo__content-wrapper">
+              <h2 class="promo__heading heading">Взгляните на жизнь иначе!</h2>
+              <a class="promo__button button link" href="#">Скачать приложение</a>
+              <ul class="promo__list list">
+                <li class="promo__item">
+                  <a class="promo__link promo__link--apple link" href="https://www.apple.com/itunes/">
+                    <span class="visually-hidden">apple</span>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link promo__link--android link" href="https://play.google.com/store">
+                    <span class="visually-hidden">android</span>
+                  </a>
+                </li>
+                <li class="promo__item">
+                  <a class="promo__link promo__link--windows link"
+                    href="https://www.microsoft.com/ru-ru/download/windowsphone.aspx">
+                    <span class="visually-hidden">windows</span>
+                  </a>
+                </li>
+              </ul>
+              <p class="promo__subtext text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
         </div>
       </section>
     </section>
@@ -245,14 +249,12 @@
             <li class="advantages__item advantages__item--second">
               <h3 class="advantages__title heading">Меняет мир вокруг</h2>
                 <p class="advantages__item-text text">Сделайте снимок и украсьте его смайликом или текстовой подписью,
-                  чтобы
-                  усилить эффект</p>
+                  чтобы усилить эффект</p>
             </li>
             <li class="advantages__item advantages__item--third">
               <h3 class="advantages__title heading">Заводит новых друзей</h2>
                 <p class="advantages__item-text text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                  заводите
-                  новых</p>
+                  заводите новых</p>
             </li>
           </ul>
         </div>
@@ -422,7 +424,7 @@
         <ul class="contact__list list">
           <li class="contact__list-item">
             <strong class="contact__subtext">Звоните:</strong>
-            <a class="contact__link link" href="tel:+78125556666">+7(812)555-66-66</a>
+            <a class="contact__link link" href="tel:+78125556666">+7 (812)555-66-66</a>
           </li>
           <li class="contact__list-item">
             <strong class="contact__subtext">Пишите:</strong>
@@ -489,6 +491,8 @@
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/ofi.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 

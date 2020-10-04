@@ -1,5 +1,5 @@
 .photo {
-  // TODO
+  padding: 46px 0 46px 0px;
 
   &__agitation {
     line-height: 30px;
@@ -8,10 +8,27 @@
     max-width: 245px;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 47px;
+
+    &--bottom {
+      max-width: 255px;
+      margin-bottom: 0;
+    }
   }
   
   &__top {
     position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+
+    &--top {
+      height: 100%;
+      object-fit: cover;
+      font-family: 'object-fit: cover;';
+    }
   }
   
   &__label {
@@ -27,11 +44,11 @@
     text-transform: uppercase;
     top: 0;
     right: 20px;
-    padding: 6px 0;
+    padding: 6px;
   }
-  
-  &__image {
-    width: 100%;
+
+  &__list {
+    margin-bottom: 45px;
   }
   
   &__item {
@@ -45,7 +62,7 @@
   &__quote {
     background-color: #f2f2f2;
     margin: 0;
-    padding: 25px 23px 25px 18px;
+    padding: 19px 18px;
   
     &--top {
       width: calc(100% - 40px);
@@ -73,7 +90,7 @@
     font-weight: 400;
     color: #283645;
     max-width: 243px;
-    margin-bottom: auto;
+    margin-bottom: 9px;
   }
   
   &__like-wrapper {
@@ -104,15 +121,15 @@
 
 @media(min-width: $tablet-width) {
   .photo {
-    // padding: 100px 0 80px 0;
+    padding: 93px 0 46px 0;
 
     &__agitation {
       font-size: 18px;
       max-width: 440px;
-      padding: 95px 0 80px;
+      margin-bottom: 75px;
 
       &--bottom {
-        padding: 70px 0;
+        margin-bottom: 20px;
       }
     }
    
@@ -120,12 +137,23 @@
       display: flex;
       flex-direction: column;
       min-height: 155px;
+      padding: 24px 27px;
   
       &--top {
         max-width: 620px;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
+        padding: 25px 28px;
+        min-height: auto;
+        margin-bottom: 38px;
+      }
+    }
+
+    &__image-wrapper {
+
+      &--top {
+        height: 510px;
       }
     }
 
@@ -138,21 +166,24 @@
     }
 
     &__text-comment {
+      margin-bottom: auto;
 
       &--top {
         max-width: 510px;
         order: 3;
+        margin-bottom: 0;
       }
     }
 
     &__label {
-      top: 55px;
+      top: 57px;
     }
   
     &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      margin: 0 -10px 55px;
     }
   
     &__item {
@@ -196,12 +227,12 @@
     &__like {
 
       &--top {
-        margin-right: 15px;
+        margin-right: 19px;
       }
     }
   
     &__button-like {
-      margin: 0;
+      margin: 0 5px 0 0;
     }
   }
 

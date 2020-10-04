@@ -5,8 +5,8 @@
 @media(min-width: $tablet-width) {
 .research {
   display: block;
-  padding: 60px 0 0 0;
-  margin-bottom: 50px;
+  padding: 75px 0 0 0;
+  margin-bottom: 42px;
 }
 
 .research__content-wrapper {
@@ -19,10 +19,9 @@
     display: block;
     width: 265px;
     height: 276px;
-    background-image: url("../images/pictures/research/timer-tablet.png");
-    background-repeat: no-repeat;
+    background: url("../images/pictures/research/timer-tablet.png") no-repeat 0 0;
     flex-shrink: 0;
-    margin-right: 45px;
+    margin-right: 33px;
   }
 }
 
@@ -36,7 +35,7 @@
   line-height: 36px;
   font-weight: 700;
   color: #000000;
-  max-width: 175px;
+  max-width: 165px;
   margin-bottom: 15px;
 }
 
@@ -61,30 +60,36 @@
 @media(min-width: $desktop-width) {
   .research {
     background-color: #f2f2f2;
-    padding-bottom: 70px;
+    padding-bottom: 115px;
     margin-bottom: 0;
   }
 
   .research__content-wrapper {
+    position: relative;
+    padding: 55px 0 0 366px;
+    justify-content: flex-start;
+    
     &::before {
+      position: absolute;
+      top: -40px;
+      left: 0;
       background-image: url("../images/pictures/research/timer-desktop.png");
       width: 298px;
       height: 345px;
-      margin-right: 68px;
     }
   }
 
   .research__title {
     line-height: 30px;
     max-width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .research__text {
     font-size: 18px;
     line-height: 30px;
-    max-width: 535px;
-    margin-bottom: 40px;
+    max-width: 530px;
+    margin-bottom: 31px;
   }
 
   .research__link {

@@ -1,17 +1,16 @@
 .greeting {
   background-color: #222e3b;
   background: url("../images/background/bg-back-mobile@1x.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 0;
   padding-top: 175px;
 
   &--form {
-    padding: 100px 0 50px 0;
+    padding: 96px 0 58px 0;
   }
 
   &--photo {
-    padding: 100px 0 85px;
+    padding: 97px 0 85px;
   }
 }
 
@@ -28,17 +27,16 @@
   .greeting {
     background-color: #222e3b;
     background: url("../images/background/bg-back-tablet@1x.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 73px;
+    background-position: 50% 0;
+    padding-top: 80px;
 
     &--form {
-      padding: 190px 0 70px 0;
+      padding: 183px 0 85px 0;
     }
 
     &--photo {
-      padding: 190px 0 145px 0;
+      padding: 183px 0 142px 0;
     }
   }
 
@@ -62,11 +60,11 @@
     padding-top: 100px;
 
     &--form {
-      padding: 180px 0 100px 0;
+      padding: 176px 0 104px 0;
     }
 
     &--photo {
-      padding-top: 180px;
+      padding: 177px 0 104px 0;
     }
   }
 

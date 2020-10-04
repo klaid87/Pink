@@ -1,9 +1,14 @@
 .social__list {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .social__item {
-  margin-right: 13px;
+  margin-right: 17px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -31,5 +36,19 @@
   &--youtube {
     width: 15px;
     height: 15px;
+  }
+}
+
+@media(min-width: $tablet-width) {
+  .social__list {
+    margin-bottom: 0;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .social__link {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(40, 54, 69, 0.1);
   }
 }

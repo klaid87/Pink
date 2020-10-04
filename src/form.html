@@ -176,17 +176,17 @@
       </p>
       <div class="container">
         <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="profile__group profile__group--initial">
+          <fieldset class="profile__group profile__group--initial field">
             <legend class="visually-hidden">Инициалы</legend>
             <div class="profile__group-wrapper">
               <p class="profile__wrapper-field profile__wrapper-field--initial text">
                 <label class="profile__label" for="surname-id">Фамилия:</label>
-                <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию*"
+                <input id="surname-id" class="profile__field" type="text" name="surname" placeholder="Укажите фамилию *"
                   required>
               </p>
               <p class="profile__wrapper-field profile__wrapper-field--initial text">
                 <label class="profile__label" for="name-id">Имя:</label>
-                <input id="name-id" class="profile__field" type="text" name="name" placeholder="Укажите ваше имя*"
+                <input id="name-id" class="profile__field" type="text" name="name" placeholder="Введите ваше имя *"
                   required>
               </p>
               <p class="profile__wrapper-field profile__wrapper-field--initial text">
@@ -196,7 +196,7 @@
               </p>
             </div>
           </fieldset>
-          <fieldset class="profile__group profile__group--checkbox">
+          <fieldset class="profile__group profile__group--checkbox field">
             <legend class="profile__legend profile__legend--mobile">Ваши безбашенные достижения в путешествии</legend>
             <ul class="profile__list list">
               <li class="profile__item profile__item--order profile__item--checkbox">
@@ -227,41 +227,41 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="profile__group profile__group--contact">
+          <fieldset class="profile__group profile__group--contact field">
             <legend class="profile__legend profile__legend--contact">Контактная информация</legend>
             <div class="profile__group-wrapper-contact">
               <p class="profile__wrapper-field profile__wrapper-field--contact text">
                 <label class="profile__label profile__label--contact profile__label--contact-phone" for="phone-id">Номер
                   телефона</label>
                 <input id="phone-id" class="profile__field profile__field--contact" type="text" name="phone"
-                  placeholder="Номер,пожалуйста">
+                  placeholder="Номер, пожалуйста">
               </p>
               <p class="profile__wrapper-field profile__wrapper-field--contact text">
                 <label class="profile__label profile__label--contact profile__label--contact-mail" for="mail-id">Адрес
                   почты</label>
                 <input id="mail-id" class="profile__field profile__field--contact" type="mail" name="mail"
-                  placeholder="Введите почту*" required>
+                  placeholder="Введите почту *" required>
               </p>
             </div>
           </fieldset>
-          <fieldset class="profile__group profile__group--radio">
+          <fieldset class="profile__group profile__group--radio field">
             <legend class="profile__legend profile__legend--mobile">С каким приложением путешествовали?</legend>
             <ul class="profile__list list">
-              <li class="profile__item">
+              <li class="profile__item profile__item--radio">
                 <input id="ios-id" class="visually-hidden" type="radio" name="radio" value="ios" checked>
                 <label class="profile__label-radio" for="ios-id">Pink для iOS</label>
               </li>
-              <li class="profile__item">
+              <li class="profile__item profile__item--radio">
                 <input id="android-id" class="visually-hidden" type="radio" name="radio" value="android">
                 <label class="profile__label-radio" for="android-id">Pink на Android</label>
               </li>
-              <li class="profile__item">
+              <li class="profile__item profile__item--radio">
                 <input id="windows-id" class="visually-hidden" type="radio" name="radio" value="windows">
                 <label class="profile__label-radio" for="windows-id">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="profile__group profile__group--textarea">
+          <fieldset class="profile__group profile__group--textarea field">
             <legend class="profile__legend profile__legend--textarea">Опишите свои эмоции</legend>
             <label class="visually-hidden" for="emotions-id">Поле ввода эмоций о приложении Pink</label>
             <textarea id="emotions-id" class="profile__field-textarea" name="emotions"
@@ -270,7 +270,7 @@
           <p class="profile__button-wrapper text">
             <button class="profile__button button" type="submit">Отправить форму</button>
             <small class="profile__hint">
-              <sup class="profile__hint-icon">*</sup>— обязательные поля
+              <sup class="profile__hint-icon">*</sup>— обязательные <b class="profile__hint-text">для заполнения</b> поля
             </small>
           </p>
         </form>
@@ -327,6 +327,9 @@
       </div>
     </div>
   </footer>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/ofi.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

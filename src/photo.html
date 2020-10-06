@@ -198,7 +198,6 @@
       </div>
     </div>
   </header>
-  </header>
 
   <main class="page-main">
     <section class="greeting greeting--photo">
@@ -212,10 +211,11 @@
         Видите, как не хватает ваших?
       </p>
       <article class="photo__top">
+        <h2 class="visually-hidden">Здесь находится картинка дня</h2>
         <picture class="photo__image-wrapper photo__image-wrapper--top pictures">
-          <source media="(min-width: 960px)" srcset="images/pictures/photo/panorama-desktop@1x.jpg">
-          <source media="(min-width: 660px)" srcset="images/pictures/photo/panorama-tablet@1x.jpg">
-          <img class="photo__image photo__image--top" src="images/pictures/photo/panorama-mobile@1x.jpg"
+          <source media="(min-width: 960px)" srcset="images/pictures/photo/panorama-desktop@1x.jpg, images/pictures/photo/panorama-desktop@2x.jpg 1.5x">
+          <source media="(min-width: 660px)" srcset="images/pictures/photo/panorama-tablet@1x.jpg, images/pictures/photo/panorama-tablet@2x.jpg 1.5x">
+          <img class="photo__image photo__image--top" src="images/pictures/photo/panorama-mobile@1x.jpg" srcset="images/pictures/photo/panorama-mobile@2x.jpg 1.5x"
             alt="Фотография пользователя сделанная с помощью приложения Pink">
         </picture>
         <blockquote class="photo__quote photo__quote--top">

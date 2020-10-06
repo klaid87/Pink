@@ -189,31 +189,31 @@
 @media(min-width: $desktop-width) {
   .price {
     padding: 154px 0 98px 0;
-    background-image: linear-gradient(176deg, #ffffff 86px, #f2f2f2 87px);
+    background-image: linear-gradient(176deg, #ffffff 134px, #f2f2f2 135px);
     margin-bottom: 68px;
-  }
 
-  .price__table-wrapper {
-    margin: 0;
-  }
-
-  .price__table {
-    width: 940px;
-  }
-
-  .price__title {
-    width: 236px;
-    padding: 18px 31px;
-  }
-
-  .price__title-cost {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .price__cell {
-    width: 234px;
-    padding: 14px 21px;
-    font-size: 18px;
+    &__table-wrapper {
+      margin: 0;
+    }
+  
+    &__table {
+      width: 940px;
+    }
+  
+    &__title {
+      width: 236px;
+      padding: 18px 31px;
+    }
+  
+    &__title-cost {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  
+    &__cell {
+      width: 234px;
+      padding: 14px 21px;
+      font-size: 18px;
+    }
   }
 }

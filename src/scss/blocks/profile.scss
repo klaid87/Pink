@@ -517,6 +517,18 @@ input[type="radio"]:checked + .profile__label-radio::before {
     }
   }
 
+  .profile__field {
+    outline: none;
+
+    &:hover {
+      border-color: #283645;
+    }
+
+    &:focus {
+      border-color: #d22856;
+    }
+  }
+
   .profile__field-textarea {
     height: 127px;
   }

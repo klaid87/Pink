@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <svg display="none">
+  <svg display="none" aria-hidden="true">
     <symbol id="logo-mobile" viewBox="0 0 74.426 22.859">
       <g>
         <path fill="#FFFFFF"
@@ -161,13 +161,13 @@
     <div class="container">
       <div class="page-header__wrapper">
         <a class="page-header__logo-link">
-          <svg class="page-header__logo-icon-mobile">
+          <svg class="page-header__logo-icon-mobile" aria-hidden="true">
             <use xlink:href="#logo-mobile"></use>
           </svg>
-          <svg class="page-header__logo-icon-tablet">
+          <svg class="page-header__logo-icon-tablet" aria-hidden="true">
             <use xlink:href="#logo-tablet"></use>
           </svg>
-          <svg class="page-header__logo-icon-desktop">
+          <svg class="page-header__logo-icon-desktop" aria-hidden="true">
             <use xlink:href="#logo-desktop"></use>
           </svg>
         </a>
@@ -183,7 +183,7 @@
               <a class="navigation__link link" href="form.html">Конкурс</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link link" href="#">HTML Academy</a>
+              <a class="navigation__link link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -194,7 +194,7 @@
 
   <main class="page-main">
     <section class="greeting">
-      <h1 class="visually-hidden">Pink.Приложение для работы с фотограффиями</h1>
+      <h1 class="visually-hidden">Pink.Приложение для работы с фотографиями</h1>
       <section class="promo">
         <div class="container">
           <div class="promo__body">
@@ -291,12 +291,12 @@
           </li>
         </ul>
         <button class="reviews__button reviews__button--prev button" type="button">
-          <svg class="reviews__icon reviews__icon-prev" width="22px" height="42px">
+          <svg class="reviews__icon reviews__icon-prev" width="22px" height="42px" aria-hidden="true">
             <use xlink:href="#icon-prev"></use>
           </svg>
         </button>
         <button class="reviews__button reviews__button--next button" type="button">
-          <svg class="reviews__icon reviews__icon-next" width="22px" height="42px">
+          <svg class="reviews__icon reviews__icon-next" width="22px" height="42px" aria-hidden="true">
             <use xlink:href="#icon-next"></use>
           </svg>
         </button>
@@ -440,9 +440,9 @@
 
     <section class="location">
       <h2 class="visually-hidden">Карта располоения нашего офиса</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1601980205138!5m2!1sru!2sby"
-        width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0">
+      <iframe class="location__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1601980205138!5m2!1sru!2sby"
+        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
       </iframe>
     </section>
   </main>
@@ -450,43 +450,45 @@
     <div class="container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo-link link">
-          <svg class="page-footer__logo-icon">
+          <svg class="page-footer__logo-icon" aria-hidden="true">
             <use xlink:href="#footer-logo"></use>
           </svg>
-          <svg class="page-footer__logo-icon page-footer__logo-icon--desktop">
+          <svg class="page-footer__logo-icon page-footer__logo-icon--desktop" aria-hidden="true">
             <use xlink:href="#footer-logo-desktop"></use>
           </svg>
         </a>
-        <ul class="social__list list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter link" href="https://twitter.com/explore">
-              <svg class="social__icon social__icon--twitter">
-                <use xlink:href="#twitter"></use>
-              </svg>
-              <span class="visually-hidden">Twittre</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook link" href="https://www.facebook.com/">
-              <svg class="social__icon social__icon--facebook">
-                <use xlink:href="#facebook"></use>
-              </svg>
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--google-play link" href="https://play.google.com/store">
-              <svg class="social__icon social__icon--youtube">
-                <use xlink:href="#youtube"></use>
-              </svg>
-              <span class="visually-hidden">Google play</span>
-            </a>
-          </li>
-        </ul>
-        <p class="footer-copyright text">
-          <span class="footer-copyright__text">Разработано</span>
-          <a class="footer-copyright__link link" href="https://htmlacademy.ru">
-            <svg class="footer-copyright__icon">
+        <div class="social">
+          <ul class="social__list list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter link" href="https://twitter.com/explore">
+                <svg class="social__icon social__icon--twitter" aria-hidden="true">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+                <span class="visually-hidden">Twittre</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook link" href="https://www.facebook.com/">
+                <svg class="social__icon social__icon--facebook" aria-hidden="true">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--google-play link" href="https://play.google.com/store">
+                <svg class="social__icon social__icon--youtube" aria-hidden="true">
+                  <use xlink:href="#youtube"></use>
+                </svg>
+                <span class="visually-hidden">Google play</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-footer__copyright text">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link link" href="https://htmlacademy.ru">
+            <svg class="page-footer__copyright-icon" aria-hidden="true">
               <use xlink:href="#html-academy"></use>
             </svg>
             <span class="visually-hidden">HTML ACAdemy</span>

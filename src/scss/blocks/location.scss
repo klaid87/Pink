@@ -1,23 +1,19 @@
 .location {
   position: relative;
   min-height: 198px;
+  height: 198px;
   background: url("../images/pictures/location/bg-map-mobile@1x.jpg") no-repeat 0 100%;
   background-size: cover;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 56%;
-    transform: translate(-50%, -56%);
-    width: 35px;
-    height: 35px;
-    background: url("../images/svg/icon-map-marker.svg") no-repeat center;
+  &__iframe {
+    width: 100%;
+    height: 100%;
   }
 
   &::after {
     content: "";
     display: block;
+    pointer-events: none;
     position: absolute;
     left: 0;
     top: 0;
